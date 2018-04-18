@@ -1,0 +1,421 @@
+.penci-icon-box {
+	position: relative;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+
+	.penci-ibox-inner {
+		width: 100%;
+		padding: 0 0 0 120px;
+		position: relative;
+	}
+
+	&.penci-block-vc {
+		background-color: transparent;
+		overflow: inherit;
+	}
+
+	.penci-ibox-img_active {
+		transition: all 0.7s;
+	}
+
+	.penci-ibox-img_hover {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.7s;
+	}
+
+	.penci-ibox-icon {
+		display: block;
+		position: absolute;
+		width: 90px;
+		top: 0;
+		left: 0;
+	}
+
+	.penci-ibox-icon--image {
+		width: 90px;
+		height: 90px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.penci-ibox-line {
+		margin-top: 10px;
+		margin-bottom: 0;
+		width: 40px;
+		height: 2px;
+		background: $color__blue;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.penci-ibox-icon-fa {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+
+		&:hover{
+			.penci-ibox-img_active {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			.penci-ibox-img_hover {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.penci-ibox-icon-fa i{
+		font-style: normal;
+		text-align: center;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		color: $color__blue;
+		font-size: 48px;
+		line-height: 1;
+		box-sizing: border-box;
+	}
+
+	.penci-ibox-title {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 0;
+		color: #111;
+	}
+
+	.penci-ibox-content {
+		margin: 8px 0 0;
+		color: #999;
+	}
+
+	&.penci-ibox-top-left {
+
+		.penci-ibox-inner {
+			padding-left: 0;
+		}
+		
+		.penci-ibox-icon {
+			position: initial;
+			margin-bottom: 20px;
+		}
+	}
+
+	&.penci-ibox-top-center {
+		text-align: center;
+
+		.penci-ibox-inner {
+			padding-left: 0;
+		}
+
+		.penci-ibox-icon {
+			position: initial;
+			margin:0 auto 20px;
+		}
+	}
+
+	&.penci-ibox-top-right {
+		text-align: right;
+
+		.penci-ibox-inner {
+			padding-left: 0;
+		}
+
+
+		.penci-ibox-icon {
+			position: initial;
+			float: right;
+			margin-bottom: 20px;
+		}
+	}
+
+	&.penci-ibox-float-right {
+		text-align: right;
+
+		.penci-ibox-inner {
+			padding-right: 120px;
+			padding-left: 0;
+		}
+
+		.penci-ibox-icon {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&.penci-ibox-icon-left,
+	&.penci-ibox-icon-right {
+		i{
+			line-height: 1.3 !important;
+			font-size: 20px;
+		}
+
+		.penci-ibox-icon {
+			width: 26px;
+			max-width: 26px;
+			max-height: 26px;
+		}
+	}
+
+	&.penci-ibox-icon-left {
+
+		.penci-ibox-inner {
+			padding-left: 36px;
+		}
+
+		p {
+			margin-left: -36px;
+		}
+	}
+
+	&.penci-ibox-icon-right {
+		text-align: right;
+
+		.penci-ibox-inner {
+			padding-left: 0;
+			padding-right: 36px;
+		}
+
+		.penci-ibox-icon {
+			right: 0;
+			left: auto;
+		}
+
+		p {
+			margin-right: -36px;
+		}
+	}
+
+	&.penci-ibox-float-left,
+	&.penci-ibox-float-right {
+
+		.penci-ibox-inner {
+			min-height: 48px;
+		}
+
+		.penci-ibox-icon {
+			max-width: 90px;
+		}
+	}
+
+	&.penci-ibox-background,
+	&.penci-ibox-outline {
+		.penci-ibox-icon-fa i{
+			line-height: 86px;
+			border:2px solid $color__blue;
+			font-size: 30px;
+			text-align: center;
+			background: $color__blue;
+		}
+	}
+
+	&.penci-ibox-background {
+		.penci-ibox-icon-fa .penci-ibox-icon--i{
+			color: #fff;
+		}
+
+		&.penci-ibox-effect-s1,
+		&.penci-ibox-effect-s3 {
+			i:after {
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				content: '';
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+				top: -2px;
+				left: -2px;
+				padding: 2px;
+				z-index: -1;
+				background: $color__blue;
+				-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+				-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+				transition: transform 0.2s, opacity 0.2s;
+			}
+
+			i{
+				background: transparent;
+			}
+
+			.penci-ibox-icon-fa {
+				cursor: pointer;
+			}
+		}
+
+
+		&.penci-ibox-effect-s1 {
+			.penci-ibox-icon-fa:hover .penci-ibox-icon--i:after {
+				-webkit-transform: scale(0.85);
+				-moz-transform: scale(0.85);
+				-ms-transform: scale(0.85);
+				transform: scale(0.85);
+			}
+		}
+
+		&.penci-ibox-effect-s2 {
+			.penci-ibox-icon--i:after {
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				content: '';
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+				top: -3px;
+				left: -3px;
+				padding: 3px;
+				box-shadow: 0 0 0 2px #111;
+				-webkit-transition: -webkit-transform .3s,opacity .2s;
+				-webkit-transform: scale(.8);
+				-moz-transition: -moz-transform .3s,opacity .2s;
+				-moz-transform: scale(.8);
+				-ms-transform: scale(.8);
+				transition: transform .3s,opacity .2s;
+				transform: scale(.8);
+				opacity: 0;
+			}
+
+			.penci-ibox-icon-fa {
+				cursor: pointer;
+			}
+
+			.penci-ibox-icon-fa:hover {
+				.penci-ibox-icon--i{
+					background-color: #111;
+					border :0;
+					color: #FFF;
+					line-height: 86px;
+
+					&:after {
+						-webkit-transform: scale(1);
+						-moz-transform: scale(1);
+						-ms-transform: scale(1);
+						transform: scale(1);
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&.penci-ibox-effect-s3 {
+			.penci-ibox-icon-fa:hover .penci-ibox-icon--i{
+				color : $color__blue;
+
+				&:after {
+					-webkit-transform: scale(1.3);
+					-moz-transform: scale(1.3);
+					-ms-transform: scale(1.3);
+					transform: scale(1.3);
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&.penci-ibox-outline {
+		.penci-ibox-icon-fa .penci-ibox-icon--i{
+			background: transparent;
+		}
+
+		&.penci-ibox-effect-s1,
+		&.penci-ibox-effect-s2,
+		&.penci-ibox-effect-s3 {
+			i:after {
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				content: '';
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+			}
+		}
+
+		&.penci-ibox-effect-s1 {
+
+		}
+
+		&.penci-ibox-effect-s2 {
+
+		}
+
+		&.penci-ibox-effect-s3 {
+
+		}
+	}
+
+
+
+	&.penci-ibox-rounded,
+	&.penci-ibox-rounded-outline {
+		.penci-ibox-icon-fa .penci-ibox-icon--i,
+		.penci-ibox-icon-fa .penci-ibox-icon--i:after{
+			border-radius: 50%;
+		}
+	}
+
+	&.penci-ibox-rounded-less,
+	&.penci-ibox-rounded-less-outline {
+		.penci-ibox-icon-fa .penci-ibox-icon--i,
+		.penci-ibox-icon-fa .penci-ibox-icon--i:after{
+			border-radius: 3px;
+		}
+	}
+
+	&.penci-ibox-boxed {
+
+	}
+
+	&.penci-ibox-rounded {
+	}
+
+	&.penci-ibox-rounded-less{
+
+	}
+
+	&.penci-ibox-rounded-outline {
+
+	}
+
+	&.penci-ibox-boxed-outline {
+
+	}
+
+	&.penci-ibox-ounded-less-outline {
+
+	}
+
+	// size icon
+	&.penci-ibox-size-sm {
+
+	}
+
+	&.penci-ibox-size-lg {
+
+	}
+
+	&.penci-ibox-size-xl {
+
+	}
+
+	&.penci-ibox-size-custom {
+
+	}
+}

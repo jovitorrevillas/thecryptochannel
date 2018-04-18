@@ -1,0 +1,820 @@
+#toplevel_page_pennews_dashboard_welcome .dashicons-admin-generic:before {
+	content: '';
+	background-image: url(../images/icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: -2px;
+	position: relative;
+}
+
+.vc_add-element-container .wpb-content-layouts span{
+	line-height: 1.3;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1,
+.vc_add-element-container .wpb-content-layouts #penci_block_2,
+.vc_add-element-container .wpb-content-layouts #penci_block_3,
+.vc_add-element-container .wpb-content-layouts #penci_block_4,
+.vc_add-element-container .wpb-content-layouts #penci_block_5,
+.vc_add-element-container .wpb-content-layouts #penci_block_6,
+.vc_add-element-container .wpb-content-layouts #penci_block_7,
+.vc_add-element-container .wpb-content-layouts #penci_block_8,
+.vc_add-element-container .wpb-content-layouts #penci_block_9,
+.vc_add-element-container .wpb-content-layouts #penci_block_10,
+.vc_add-element-container .wpb-content-layouts #penci_block_11,
+.vc_add-element-container .wpb-content-layouts #penci_block_12,
+.vc_add-element-container .wpb-content-layouts #penci_block_13,
+.vc_add-element-container .wpb-content-layouts #penci_block_14,
+.vc_add-element-container .wpb-content-layouts #penci_block_15,
+.vc_add-element-container .wpb-content-layouts #penci_block_16,
+.vc_add-element-container .wpb-content-layouts #penci_block_17,
+.vc_add-element-container .wpb-content-layouts #penci_block_18,
+.vc_add-element-container .wpb-content-layouts #penci_block_19,
+.vc_add-element-container .wpb-content-layouts #penci_block_20,
+.vc_add-element-container .wpb-content-layouts #penci_block_21,
+.vc_add-element-container .wpb-content-layouts #penci_block_22,
+.vc_add-element-container .wpb-content-layouts #penci_block_23,
+.vc_add-element-container .wpb-content-layouts #penci_block_24,
+.vc_add-element-container .wpb-content-layouts #penci_block_25,
+.vc_add-element-container .wpb-content-layouts #penci_block_26,
+.vc_add-element-container .wpb-content-layouts #penci_block_27,
+.vc_add-element-container .wpb-content-layouts #penci_block_28,
+.vc_add-element-container .wpb-content-layouts #penci_block_29,
+.vc_add-element-container .wpb-content-layouts #penci_block_30,
+.vc_add-element-container .wpb-content-layouts #penci_block_31,
+.vc_add-element-container .wpb-content-layouts #penci_block_32,
+.vc_add-element-container .wpb-content-layouts #penci_block_33,
+.vc_add-element-container .wpb-content-layouts #penci_block_34,
+.vc_add-element-container .wpb-content-layouts #penci_block_35,
+.vc_add-element-container .wpb-content-layouts #penci_block_36,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15,
+.vc_add-element-container .wpb-content-layouts #penci_sliders,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker,
+.vc_add-element-container .wpb-content-layouts #penci_container,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery,
+.vc_add-element-container .wpb-content-layouts #portfolio,
+.vc_add-element-container .wpb-content-layouts #penci_weather,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest,
+.vc_add-element-container .wpb-content-layouts #penci_about_us,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box,
+.vc_add-element-container .wpb-content-layouts #penci_image_box,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2,
+.vc_add-element-container .wpb-content-layouts #penci_team_members,
+.vc_add-element-container .wpb-content-layouts #penci_instagram,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud,
+.vc_add-element-container .wpb-content-layouts #penci_text_block,
+.vc_add-element-container .wpb-content-layouts #penci_login_form,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading,
+.vc_add-element-container .wpb-content-layouts #penci_info_box,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel,
+.vc_add-element-container .wpb-content-layouts #penci_count_down,
+.vc_add-element-container .wpb-content-layouts #penci_map,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials,
+.vc_add-element-container .wpb-content-layouts #penci_single_video,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails,
+.vc_add-element-container .wpb-content-layouts #penci_testimonail,
+.vc_add-element-container .wpb-content-layouts #penci_social_media,
+
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video {
+	padding-left: 75px;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_3 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_4 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_5 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_6 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_7 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_8 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_9 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_10 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_11 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_12 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_13 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_14 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_15 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_16 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_17 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_18 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_19 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_20 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_21 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_22 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_23 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_24 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_25 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_26 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_27 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_28 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_29 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_30 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_31 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_32 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_33 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_34 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_35 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_36 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_sliders .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_container .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #portfolio .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_weather .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_text_block .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_about_us .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_image_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_login_form .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_team_members .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_instagram .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_info_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_count_down .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_map .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_single_video .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_social_media .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video .vc_element-description {
+	display: none;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_3 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_4 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_5 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_6 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_7 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_8 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_9 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_10 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_11 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_12 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_13 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_14 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_15 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_16 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_17 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_18 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_19 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_20 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_21 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_22 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_23 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_24 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_25 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_26 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_27 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_28 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_29 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_30 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_31 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_32 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_33 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_34 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_35 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_36 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_sliders .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_container .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #portfolio .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_weather .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_text_block .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_about_us .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_image_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_login_form .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_team_members .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_instagram .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_info_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_count_down .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_map .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_single_video .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_social_media .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video .vc_element-icon {
+	width: 60px !important;
+	height: 44px !important;
+	margin-bottom: 0 !important;
+	top: 12px !important;
+}
+
+.penci-param-heading-wrapper {
+	padding: 10px 15px;
+	font-size: 14px;
+	background: #e6e6e6;
+	color: #6C6C6C;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.penci-param-heading-wrapper .edit_form_line {
+	display: none;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-12_14_14,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-14_14_12 {
+	margin-left: 4px;
+}
+
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-4_1-4_1-2:before,
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-2_1-4_1-4:before {
+	content: '';
+	background-image: url(../images/icon-vc-layout.png);
+	width: 28px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: -13px;
+}
+
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-4_1-4_1-2:before {
+	background-position-x: 29px;
+}
+
+
+
+/** widget **/
+
+.penci-field-item  textarea {
+ min-height: 130px;
+}
+.penci-widget-desc {
+	color: #999;
+	font-size: 12px;
+	display: block;
+	font-style: italic;
+	line-height: 20px;
+	margin-top: 8px;
+	clear: both;
+}
+
+.penci-checkbox {
+	float: left;
+	position: relative;
+	top: 4px;
+}
+
+.penci-picker-container {
+	clear: both;
+	display: block;
+}
+
+.penci-field-item {
+	clear: both;
+}
+
+.penci-widget-image {
+	clear: both;
+	width: 100%;
+}
+
+.penci-widget-image .penci-widget-image__select {
+	clear: both;
+}
+
+.penci-widget-image .penci-widget-image__image:not(.hidden) {
+	margin: 10px auto 0;
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	background: url(../vc/add.png) center center no-repeat #F5F5F5;
+	border: 1px solid #DFDFDF;
+	font-size: 0;
+	color: #F5F5F5;
+	overflow: hidden;
+}
+
+.penci-widget-image img {
+	width: auto;
+	height: auto;
+	max-height: 100px;
+}
+
+.penci-widget-image .penci-widget-image__select {
+	clear: both;
+	margin-top: 10px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.penci-widget-image .penci-widget-image__remove {
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.vc_shortcodes_container > .wpb_element_wrapper > .vc_container_for_children, .vc_shortcodes_container > .wpb_element_wrapper > .vc_container_for_children .wpb_column_container {
+	background-color: #F5F5F5;
+	padding: 10px 5px;
+}
+
+.penci-param-heading-wrapper {
+	padding: 10px 15px;
+	font-size: 14px;
+	background: #e6e6e6;
+	color: #6C6C6C;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.widget-content .penci-param-heading-wrapper {
+	padding: 2px 8px;
+}
+
+.penci-param-heading-wrapper .edit_form_line {
+	display: none;
+}
+
+.vc_edit_form_elements .edit_form_line input[type=number] {
+	height: 28px !important;
+}
+
+.wpb_penci_image_gallery .column_edit_trigger {
+	margin-top: 2px;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails {
+	overflow: hidden;
+	height: 20px;
+	padding: 0;
+	margin: 5px 0 0;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails li {
+	height: 20px;
+	width: 20px;
+	overflow: hidden;
+	margin-right: 1px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails li .vc_icon-remove {
+	display: none;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails img {
+	height: 20px;
+	width: auto;
+}
+
+/***** Shortcode container ******/
+.wpb_penci_container .vc_controls .wpb_element_title {
+	font-size: 13px;
+	line-height: 13px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	color: #131313;
+	font-weight: 600;
+	margin-left: 3px;
+	margin-right: -5px;
+}
+
+.wpb_penci_container .vc_controls .wpb_element_title img {
+	width: 35px;
+	position: relative;
+	margin-bottom: -9px;
+}
+
+.wpb_penci_container > .vc_controls > .column_move {
+	background-color: #fff;
+}
+
+.wpb_row_container > .wpb_vc_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts {
+	height: 17px !important;
+	left: 69px !important;
+	overflow: inherit !important;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a {
+	position: relative;
+}
+
+.vc_controls-row .vc_control-row-layout:hover a.penci-hidden,
+.vc_controls-row .vc_row_layouts:hover a.penci-hidden {
+	display:none;
+}
+
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-13_23 i {
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	top: 4px;
+	left: 2px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:before,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:after {
+	position: absolute;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1000000;
+	pointer-events: none;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+	-webkit-transition-delay: 0ms;
+	-moz-transition-delay: 0ms;
+	transition-delay: 0ms;
+	left: 100%;
+	bottom: 50%;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	border: 6px solid transparent;
+	z-index: 1000001;
+	margin-bottom: 11px;
+	left: 8px;
+	border-top-color: #383838;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:after {
+	content: attr(data-hint);
+	background: #383838;
+	color: white;
+	padding: 8px 10px;
+	font-size: 12px;
+	line-height: 12px;
+	white-space: nowrap;
+	border-radius: 3px;
+	margin-bottom: 22px;
+	margin-left: -29px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:after, .wpb_penci_container .vc_controls-row .vc_row_layouts a:focus:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:focus:after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translateY(8px);
+	-moz-transform: translateY(8px);
+	transform: translateY(8px);
+	z-index: 5;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:after {
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+}
+
+.wpb_penci_container .vc_controls-row .vc_control-row-layout a.vc_active,
+.wpb_penci_container .vc_controls-row .vc_control-row-layout a:hover,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.vc_active,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover {
+	background-color: #FBEED5;
+}
+
+.wpb_row_container > .wpb_penci_column > .vc_controls,
+.wpb_row_container > .wpb_penci_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper {
+	background: #fff;
+	padding: 1px 14px;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper > .wpb_column_container,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper > .wpb_column_container {
+	border: 5px solid #f5f5f5;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper .wpb_penci_container_inner,
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper .wpb_content_element,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper .wpb_penci_container_inner,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper .wpb_content_element {
+	border-bottom: 5px solid #f5f5f5;
+}
+
+.wpb_row_container > .wpb_penci_column > .vc_controls,
+.wpb_row_container > .wpb_penci_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_penci_container {
+	margin-top: 5px;
+}
+
+.penci_container_controls .vc_row-hash-id {
+	position: inherit !important;
+	left: 2px !important;
+	margin-right: 2px;
+	display: block;
+	height: 15px;
+	overflow: hidden;
+	float: left;
+	padding: 5px;
+	text-align: left;
+	margin-left: 3px;
+	background: #e6e6e6;
+	border: 1px solid transparent;
+	border-radius: 2px 2px 0 0;
+	margin-top: 0;
+	color: #444;
+}
+
+.vc_inappropriate[data-element="penci_container"] + .vc_inappropriate[data-element="penci_container_inner"] {
+	display: block !important;
+}
+
+.penci-image-select {
+	display: inline-block;
+	width: 68px;
+	height: 52px;
+	float: left;
+	margin: 0 5px 10px 0;
+	border: 2px solid #d8d8d8;
+	border-radius: 3px;
+	padding: 1px;
+}
+
+.penci-image-select:hover,
+.penci-image-select--active {
+	border-color: #0074a2;
+}
+
+.penci-image-select:hover {
+	cursor: pointer;
+}
+
+.vc_edit_form_elements .penci-number-input {
+	width: 5em;
+	margin-right: 5px;
+}
+
+.vc_edit_form_elements .penci-only-number-input {
+	width: 7em;
+	margin-right: 5px;
+}
+
+.vc_edit_form_elements .penci-number-suffix {
+	width: 5em;
+	height: 28px;
+	padding: 0 6px;
+	vertical-align: top;
+}
+
+.widget .nav-tab {
+	margin-left: 2px;
+	padding: 3px 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+.post-type-penci_slider {
+
+}
+
+.post-type-penci_slider .column-title {
+	width: 10%;
+}
+
+.post-type-penci_slider .column-shortcode {
+	width: 20%;
+}
+
+.column-shortcode textarea{
+	width:100%;
+	height:60px;
+	line-height: 35px;
+	background-color: #eee;
+}
+
+.column-content_slider .slider-thumb{
+	width:120px;
+	margin-right:10px;
+	float: left;
+	max-height: 200px;
+}
+.column-content_slider .slider-item {
+	border-bottom: 1px dashed #e1e1e1;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.column-content_slider .slider-item:last-child{
+	border: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.column-content_slider h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* Widget */
+.pennews-remove-custom-sidebar .notice-dismiss {
+	right: 30px;
+	top: 3px;
+}
+
+.mce-i-pencisc-logo {
+	position: relative;
+}
+.mce-i-pencisc-logo:before {
+	content: '';
+}
+
+.penci-slider-heading {
+	border-left: 4px solid #ffba00;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.widget-content .penci-build-query {
+	border: 1px solid #dfdfdf;
+	padding: 10px;
+	margin-top: 10px;
+	background: #f5f5f5;
+	position: relative;
+	display: none;
+}
+.widget-content .penci-build-query.active {
+	display: block;
+}
+
+.widget-content .penci-build-query:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -8px;
+	left: 20px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #dfdfdf;
+}
