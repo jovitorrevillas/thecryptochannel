@@ -64,3 +64,87 @@ function clean_custom_menu( $theme_location ) {
     }
     echo $menu_list;
 }
+
+
+
+
+
+
+// PHILIP F
+add_shortcode('about_sc','about_sc_handler');
+
+function about_sc_handler($content,$tag){
+
+
+    $params = array(
+        'post_type'   => 'people',
+        'tax_query'   => array(
+            array(
+                'taxonomy' => 'people_tax',
+                'field'    => 'slug',
+                'terms'    => $tag
+            )
+        )
+    );
+
+    $people = new WP_Query($params);
+
+    if( $people->have_posts() ) :
+
+
+        $tempo = '<ul>';
+
+            while( $people->have_posts() ) :
+                $people->the_post();
+
+
+                $tempo .= '<div style="
+
+                display: inline-block;
+                border: 1px solid whitesmoke;
+                width: 31.3333333%;
+                border-radius: 7px;
+                background-color: white;
+                height: auto;
+                margin-top: 15px;
+                margin-right: 1.5%;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                ">
+                   
+                   <div>
+                        <img style="
+                        width: auto;
+                        border-top-left-radius: 7px;
+                        border-top-right-radius: 7px;"
+                             src="'. get_the_post_thumbnail_url().'">
+                    </div>
+                
+                    <div  style="
+                    padding: 10px 15px;
+                    width: 50%;
+                    display: inline-block;">
+                        <a href="#"> '.get_the_title().'</a>
+                    </div>
+                   
+                    <div  style="
+                    border: 1px solid black;
+                    padding: 10px 15px;
+                    width: 30%;
+                    float: right;
+                    display: inline-block;">
+                        <a href="#">THE LINKS</a>
+                    </div>
+
+                </div>'; ?>
+
+            <?php
+            endwhile;
+            wp_reset_postdata();
+
+        $tempo .= '</ul>';
+
+    else :
+        $tempo = esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
+    endif;
+    return $tempo;
+}
