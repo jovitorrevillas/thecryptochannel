@@ -605,3 +605,5 @@ $wp_customize->add_control( 'custom_code_inside_head_tag', array(
 	'settings'    => 'custom_code_inside_head_tag',
 	'type'        => 'textarea',
 ) );
+
+

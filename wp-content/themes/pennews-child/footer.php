@@ -10,7 +10,6 @@
  */
 
 ?>
-
 	</div><!-- #content -->
 <?php
 
@@ -26,20 +25,66 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 ?>
 <?php penci_render_google_adsense( 'penci_general_ad_above_footer' ); ?>
 	<footer id="colophon" class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
-		<meta itemprop="name" content="Webpage footer for <?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
-		<meta itemprop="description" content="<?php echo esc_attr( get_bloginfo( 'description' ) ); ?>"/>
-		<meta itemprop="keywords" content="Data Protection, Copyright Data"/>
-		<meta itemprop="copyrightYear" content="<?php echo date("Y"); ?>"/>
-		<meta itemprop="copyrightHolder" content="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
-		<?php
-		if( class_exists( 'Penci_Global_Blocks' ) ) {
-			Penci_Global_Blocks::set_is_row( false );
-		}
-		?>
-		<?php get_template_part( 'template-parts/footer/footer-sidebars' ); ?>
-		<?php get_sidebar( 'instagram' ); ?>
-		<?php get_template_part( 'template-parts/footer/footer-bottom' ); ?>
-		<?php get_template_part( 'template-parts/footer/footer-copyright' ); ?>
+		<?php clean_custom_menu("menu-2"); ?>
+
+		<div class="footer-last-widget penci-container">
+			<div class="footer-one">
+				<div style="display: flex; height: 52px; padding-top: 7px;">
+					<!-- rss -->
+					<a href="<?php echo get_theme_mod( 'rss_footer_link' , "#"); ?>">
+						<div class="social-icons">
+							<i class="fa fa-rss"></i>
+						</div>
+					</a>
+					<!-- twitter -->
+					<a href="<?php echo get_theme_mod( 'twitter_footer_link' , "#"); ?>">
+						<div class="social-icons">
+							<i class="fa fa-twitter"></i>
+						</div>
+					</a>
+					<!-- telegram -->
+					<a href="<?php echo get_theme_mod( 'telegram_footer_link' , "#"); ?>">
+						<div class="social-icons">
+							<i class="fa fa-paper-plane gtm-icon-tg-footer"></i>
+						</div>
+					</a>
+					<!-- youtube -->
+					<a href="<?php echo get_theme_mod( 'youtube_footer_link' , "#"); ?>">
+						<div class="social-icons">
+							<i class="fa fa-youtube-play gtm-icon-yt-footer"></i>
+						</div>
+					</a>
+					<!-- fb -->
+					<a href="<?php echo get_theme_mod( 'facebook_footer_link' , "#"); ?>">
+						<div class="social-icons">
+							<i class="fa fa-facebook"></i>
+						</div>
+					</a>
+				</div>
+				<div class="footer-text">
+					<?php echo get_theme_mod( 'footer_message_social' , "#"); ?>
+				</div>
+			</div>
+			<div class="footer-two">
+				<?php echo do_shortcode('[contact-form-7 id="86" title="Footer Email"]'); ?>
+
+				<div class="footer-text" style="margin-top: 20px;">
+					<?php echo get_theme_mod( 'footer_message_email' , "#"); ?>
+				</div>
+			</div>
+			<div class="footer-three">
+				<div style="height: 52px;"></div>
+				<div style="margin-top: 20px; display: flex; flex-direction: column; align-items: flex-end;">
+					<a href="<?php echo get_theme_mod( 'tos_link' , "#"); ?>">
+						<?php echo get_theme_mod( 'tos_message' , "#"); ?>
+					</a>
+					<div class="copy-message">
+						&copy; TheCryptoChannel 2018
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</footer><!-- #colophon -->
 <?php } ?>
 </div><!-- #page -->
@@ -49,10 +94,13 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 	<a href="#" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 <?php endif; ?>
 <?php wp_footer(); ?>
-<?php
-if( get_theme_mod('penci_footer_analytics') ){
-	echo get_theme_mod('penci_footer_analytics');
-}
-?>
+<script>
+	// Adjust 
+	// header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a
+	(function($){
+		let menu_items = $('header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a').width();
+		$('header div nav#site-navigation #menu-main-menu ul.sub-menu').css('width', menu_items*3);
+	})(jQuery);
+</script>
 </body>
 </html>
