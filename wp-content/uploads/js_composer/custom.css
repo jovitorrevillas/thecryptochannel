@@ -1,0 +1,33 @@
+/*PJ styles*/
+hr{
+    height: 2px;
+    width: 50px;
+    background: #ffcd04;
+    float: left;
+}
+.wpb_text_column{
+    background: transparent;
+}
+body{
+    background: white;
+}
+.penci_media_object .penci_mobj__img{
+    width: 25.5%;
+}
+.penci-block_12 .penci_media_object {
+    margin-bottom: 20px;
+}
+button, .button, .entry-content a.button{
+    color: #a1a1a1;
+    border: 0 solid #000;
+    background: transparent;
+}
+.entry-content a{
+    color: #010101;
+}
+.penci-archive .penci-archive__content .entry-meta a, .penci-archive .penci-archive__content .entry-meta span:not(.penci-chart-text), .penci-archive .penci-archive__content .entry-meta i, .penci-owl-featured-area.style-15 .penci_post-meta a, .penci-owl-featured-area.style-15 .penci_post-meta span:not(.penci-chart-text), .penci-owl-featured-area.style-15 .penci_post-meta i, .penci-inline-related-posts .penci_post-meta a, .penci-inline-related-posts .penci_post-meta span:not(.penci-chart-text), .penci-inline-related-posts .penci_post-meta i, .penci__general-meta .penci_post-meta a, .penci__general-meta .penci_post-meta span:not(.penci-chart-text), .penci__general-meta .penci_post-meta i, .penci-block_video.style-1 .penci_post-meta a, .penci-block_video.style-1 .penci_post-meta span:not(.penci-chart-text), .penci-block_video.style-1 .penci_post-meta i, .penci-block_video.style-7 .penci_post-meta a, .penci-block_video.style-7 .penci_post-meta span:not(.penci-chart-text), .penci-block_video.style-7 .penci_post-meta i, .penci-grid_4 .penci_post-meta a, .penci-grid_4 .penci_post-meta span:not(.penci-chart-text), .penci-grid_4 .penci_post-meta i, .penci-block_30 .penci_post-meta a, .penci-block_30 .penci_post-meta span:not(.penci-chart-text), .penci-block_30 .penci_post-meta i, .penci-block_33 .penci_post-meta a, .penci-block_33 .penci_post-meta span:not(.penci-chart-text), .penci-block_33 .penci_post-meta i, .penci__general-meta .penci_post-meta a, .penci__general-meta .penci_post-meta span:not(.penci-chart-text), .penci__general-meta .penci_post-meta i, .penci-entry-meta a, .penci-entry-meta span:not(.penci-chart-text), .penci-entry-meta i{
+    color: #27282d;
+}
+ul li{
+    list-style-type: circle;
+}

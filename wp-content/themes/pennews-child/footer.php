@@ -98,8 +98,21 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 	// Adjust 
 	// header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a
 	(function($){
-		let menu_items = $('header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a').width();
-		$('header div nav#site-navigation #menu-main-menu ul.sub-menu').css('width', menu_items*3);
+		let menu_len = $('header div nav#site-navigation #menu-main-menu li.menu-item-has-children').length, item_num = 1;
+		for(let loop_num = 1;loop_num<menu_len+1;loop_num++){
+			let check_me = $(`header div nav#site-navigation #menu-main-menu li.menu-item-has-children:nth-child(${loop_num}) ul.sub-menu li.menu-item`).length;
+			if(check_me>6)
+				item_num = 5;
+			else if(check_me>3)
+				item_num = 3;
+			else
+				item_num = 1.5;
+			let menu_items = $(`header div nav#site-navigation #menu-main-menu li.menu-item-has-children:nth-child(${loop_num}) ul.sub-menu li.menu-item a`).width();
+			$(`header div nav#site-navigation #menu-main-menu li.menu-item-has-children:nth-child(${loop_num}) ul.sub-menu`).css('width', menu_items*item_num);
+			menu_items = $('header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a').height();
+			$('header div nav#site-navigation #menu-main-menu ul.sub-menu').css('height', (menu_items*7)-5);
+			console.log(loop_num, item_num);
+		}
 	})(jQuery);
 </script>
 </body>

@@ -1,9 +1,8 @@
-
 <div class="header__top header--s2">
 	<div class="<?php echo penci_get_class_header_width(); ?> header-top__container">
 		<?php get_template_part( 'template-parts/header/logo' ); ?>
 		<div>
-			asd
+			<?php echo do_shortcode('[ccpw id="500"]'); ?>
 		</div>
 	</div>
 </div>
