@@ -22,3 +22,18 @@ vim wp-config.php
 vim wp-config.php
 vim git.php
 vim .htaccess
+git push origin master
+ls -l
+git push origin master
+git status
+git add .
+git commit -m "April 20"
+git push origin master
+git pull origin master
+git status
+git push origin master
+git pull origin master
+git add .
+git commit -m "Merge"
+git push origin master
+exit
