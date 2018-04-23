@@ -8,6 +8,35 @@
 get_header();
 
 ?>
+<script type="text/javascript">
+	var currency = "USD";
+	var crypto = "BTC";
+
+	var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
+	var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+
+	$( document ).ready(function() {
+		xhr.open('get', url, true);
+		xhr.onreadystatechange = function() {
+			var status;
+			var data;
+
+			if (xhr.readyState == 4) {
+				status = xhr.status;
+
+				if (status == 200) {
+					data = JSON.parse(xhr.responseText);
+					console.log(data);
+					//
+				} else {
+					//
+				}
+			}
+		};
+
+		xhr.send();
+	});
+</script>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
