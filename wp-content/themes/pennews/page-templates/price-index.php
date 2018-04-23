@@ -9,13 +9,13 @@ get_header();
 
 ?>
 <script type="text/javascript">
-	var currency = "USD";
-	var crypto = "BTC";
-
-	var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
-	var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-
 	document.addEventListener("DOMContentLoaded", function(event) { 
+		var currency = "USD";
+		var crypto = "BTC";
+
+		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
+		var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+
 		xhr.open('get', url, true);
 		xhr.onreadystatechange = function() {
 			var status;
