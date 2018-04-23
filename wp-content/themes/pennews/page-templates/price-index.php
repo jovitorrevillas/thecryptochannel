@@ -28,7 +28,7 @@ get_header();
 				'crypto_voldot24h'	: data.DISPLAY[crypto][currency].VOLUME24HOURTO,
 			}
 
-			for (var property in object) {
+			for (var property in data) {
 				console.log(document.getElementById(property));
 				var elem = document.getElementById(property);
 				elem.innerHTML(data.property);
