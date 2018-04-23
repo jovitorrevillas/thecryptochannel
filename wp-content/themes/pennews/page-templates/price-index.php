@@ -16,6 +16,25 @@ get_header();
 		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
 		var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
+		function fillSummary(data) {
+			var data = {
+				'crypto_open24h'	: data.DISPLAY[crypto][currency].OPEN24HOUR,
+				'crypto_high24h'	: data.DISPLAY[crypto][currency].HIGH24HOUR,
+				'crypto_low24h'		: data.DISPLAY[crypto][currency].LOW24HOUR,
+				'crypto_lastprice'	: data.DISPLAY[crypto][currency].PRICE,
+				'crypto_total'		: data.DISPLAY[crypto][currency].SUPPLY,
+				'crypto_mktcap'		: data.DISPLAY[crypto][currency].MKTCAP,
+				'crypto_vol24h'		: data.DISPLAY[crypto][currency].VOLUME24HOUR,
+				'crypto_voldot24h'	: data.DISPLAY[crypto][currency].VOLUME24HOURTO,
+			}
+
+			for (var property in object) {
+				console.log(document.getElementById(property));
+				var elem = document.getElementById(property);
+				elem.innerHTML(data.property);
+			}
+		}
+
 		xhr.open('get', url, true);
 		xhr.onreadystatechange = function() {
 			var status;
@@ -26,10 +45,7 @@ get_header();
 
 				if (status == 200) {
 					data = JSON.parse(xhr.responseText);
-					console.log(data);
-					//
-				} else {
-					//
+					fillSummary();
 				}
 			}
 		};
@@ -55,37 +71,37 @@ get_header();
 											<div class="col-md-4">
 												<div class="field clearfix">
 													<label class="pull-left">Open 24H</label>
-													<span class="pull-right">$ 8 937.95</span>
+													<span id="crypto_open24h" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">High 24H</label>
-													<span class="pull-right">$ 9 137.69</span>
+													<span id="crypto_high24h" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">Low 24H</label>
-													<span class="pull-right">$ 8 773.66</span>
+													<span id="crypto_low24h" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">Last Price</label>
-													<span class="pull-right">$ 8 954.06</span>
+													<span id="crypto_lastprice" class="pull-right">-</span>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="field clearfix">
 													<label class="pull-left">Total</label>
-													<span class="pull-right">Ƀ 16 945 912.00</span>
+													<span id="crypto_total" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">Mkt. Cap</label>
-													<span class="pull-right">$ 151B</span>
+													<span id="crypto_mktcap" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">Vol 24H</label>
-													<span class="pull-right">Ƀ 61 919.49</span>
+													<span id="crypto_vol24h" class="pull-right">-</span>
 												</div>
 												<div class="field clearfix">
 													<label class="pull-left">Vol.24H</label>
-													<span class="pull-right">$ 552 026 293.53</span>
+													<span id="crypto_voldot24h" class="pull-right">-</span>
 												</div>
 											</div>
 										</div>
