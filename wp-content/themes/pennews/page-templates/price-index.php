@@ -31,7 +31,7 @@ get_header();
 			for (var property in data) {
 				console.log(document.getElementById(property));
 				var elem = document.getElementById(property);
-				elem.innerHTML(data.property);
+				elem.innerHTML = data.property;
 			}
 		}
 
