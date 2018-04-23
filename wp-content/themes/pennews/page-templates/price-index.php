@@ -15,7 +15,7 @@ get_header();
 	var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
 	var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
-	$( document ).ready(function() {
+	document.addEventListener("DOMContentLoaded", function(event) { 
 		xhr.open('get', url, true);
 		xhr.onreadystatechange = function() {
 			var status;
