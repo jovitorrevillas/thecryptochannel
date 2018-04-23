@@ -45,7 +45,7 @@ get_header();
 
 				if (status == 200) {
 					data = JSON.parse(xhr.responseText);
-					fillSummary();
+					fillSummary(data);
 				}
 			}
 		};
