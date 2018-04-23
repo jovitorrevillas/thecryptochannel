@@ -19,7 +19,7 @@ get_header();
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
 									<h1><?php echo get_the_title(); ?></h1>
-									<div class="col-md-9">
+									<div class="price-index-summary-column col-md-9">
 									</div>
 									<div class="col-md-3">
 									</div>
