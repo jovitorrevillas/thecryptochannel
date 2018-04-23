@@ -24,39 +24,39 @@ get_header();
 											<div class="col-md-4">
 											</div>
 											<div class="col-md-4">
-												<div class="field">
-													<label>Open 24H</label>
-													<span>$ 8 937.95</span>
+												<div class="field clearfix">
+													<label class="pull-left">Open 24H</label>
+													<span class="pull-right">$ 8 937.95</span>
 												</div>
-												<div class="field">
-													<label>High 24H</label>
-													<span>$ 9 137.69</span>
+												<div class="field clearfix">
+													<label class="pull-left">High 24H</label>
+													<span class="pull-right">$ 9 137.69</span>
 												</div>
-												<div class="field">
-													<label>Low 24H</label>
-													<span>$ 8 773.66</span>
+												<div class="field clearfix">
+													<label class="pull-left">Low 24H</label>
+													<span class="pull-right">$ 8 773.66</span>
 												</div>
-												<div class="field">
-													<label>Last Price</label>
-													<span>$ 8 954.06</span>
+												<div class="field clearfix">
+													<label class="pull-left">Last Price</label>
+													<span class="pull-right">$ 8 954.06</span>
 												</div>
 											</div>
 											<div class="col-md-4">
-												<div class="field">
-													<label>Total</label>
-													<span>Ƀ 16 945 912.00</span>
+												<div class="field clearfix">
+													<label class="pull-left">Total</label>
+													<span class="pull-right">Ƀ 16 945 912.00</span>
 												</div>
-												<div class="field">
-													<label>Mkt. Cap</label>
-													<span>$ 151B</span>
+												<div class="field clearfix">
+													<label class="pull-left">Mkt. Cap</label>
+													<span class="pull-right">$ 151B</span>
 												</div>
-												<div class="field">
-													<label>Vol 24H</label>
-													<span>Ƀ 61 919.49</span>
+												<div class="field clearfix">
+													<label class="pull-left">Vol 24H</label>
+													<span class="pull-right">Ƀ 61 919.49</span>
 												</div>
-												<div class="field">
-													<label>Vol.24H</label>
-													<span>$ 552 026 293.53</span>
+												<div class="field clearfix">
+													<label class="pull-left">Vol.24H</label>
+													<span class="pull-right">$ 552 026 293.53</span>
 												</div>
 											</div>
 										</div>
