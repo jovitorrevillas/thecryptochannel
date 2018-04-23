@@ -1,9 +1,14 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'enqueue_site_script' );
 function theme_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'penci-style-child', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ), wp_get_theme()->get( 'Version' ) );
+}
 
+// Main.js
+function enqueue_site_script() {
+    wp_enqueue_script( 'site-main', get_template_directory_uri() . '-child/main.js', array(jquery), '1.0.0', true );
 }
 
 function clean_custom_menu( $theme_location ) {
@@ -279,8 +284,16 @@ function links_meta_box_save( $post_id )
       
 }
 
+function my_theme_scripts() {
+	if(is_page(483)) {
+		wp_enqueue_script('ckeditor', '//cdn.ckeditor.com/4.9.2/full/ckeditor.js');
+	}
+}
+
 add_shortcode('about_sc','about_sc_handler');
 add_action( 'init', 'cptui_register_my_cpts_people' );
 add_action( 'init', 'cptui_register_my_taxes_people_tax' );
 add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
 add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
+
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );

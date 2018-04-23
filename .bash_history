@@ -37,3 +37,11 @@ git add .
 git commit -m "Merge"
 git push origin master
 exit
+git status
+git push origin master
+git add .=
+git add .
+git add *
+git status
+git commit -m "Push as of 4/23/2018 11:15am"
+git push origin master

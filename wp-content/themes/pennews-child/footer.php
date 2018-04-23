@@ -94,7 +94,6 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 	<a href="#" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 <?php endif; ?>
 <?php wp_footer(); ?>
-<script src="main.js"></script>
 <script>
 	// Adjust 
 	// header div nav#site-navigation #menu-main-menu ul.sub-menu li.menu-item a
