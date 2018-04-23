@@ -18,7 +18,7 @@ get_header();
 						<article>
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
-									<h1><?php get_the_title() ?></h1>
+									<h1><?php echo get_the_title(); ?></h1>
 								</div>
 							</div>
 						</article>
