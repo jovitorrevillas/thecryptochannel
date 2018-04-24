@@ -154,11 +154,11 @@ $symbol = $symbols[get_the_ID()];
 									<div class="price-index-summary-column col-md-9 col-sm-12">
 										<div class="row currency-selection">
 											<ul class="nav nav-pills">
-												<li class="currency-item active"><a onclick="toggleCurrency('USD')">USD</a></li>
-												<li class="currency-item"><a onclick="toggleCurrency('EUR')">EUR</a></li>
-												<li class="currency-item"><a onclick="toggleCurrency('GBP')">GBP</a></li>
-												<li class="currency-item"><a onclick="toggleCurrency('JPY')">JPY</a></li>
-												<li class="currency-item"><a onclick="toggleCurrency('RUR')">RUR</a></li>
+												<li class="currency-item active" onclick="toggleCurrency('USD')"><a href="#">USD</a></li>
+												<li class="currency-item" onclick="toggleCurrency('EUR')"><a href="#">EUR</a></li>
+												<li class="currency-item" onclick="toggleCurrency('GBP')"><a href="#">GBP</a></li>
+												<li class="currency-item" onclick="toggleCurrency('JPY')"><a href="#">JPY</a></li>
+												<li class="currency-item" onclick="toggleCurrency('RUR')"><a href="#">RUR</a></li>
 											</ul>
 										</div>
 										<div class="row other-summary">
