@@ -6,26 +6,33 @@
  */
 
 get_header();
+$symbols = array(
+	811 => 'BTC',
+	817 => 'BCH',
+	821 => 'ETH',
+);
+
+$symbol = $symbols[get_the_ID()];
 
 ?>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		var currency = "USD";
-		var crypto = "BTC";
+		var symbol = <?php echo "\"$symbol\""; ?>;
 
-		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + crypto + "&tsyms=" + currency;
+		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currency;
 		var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 		function fillSummary(data) {
 			var data = {
-				'crypto_open24h'	: data.DISPLAY[crypto][currency].OPEN24HOUR,
-				'crypto_high24h'	: data.DISPLAY[crypto][currency].HIGH24HOUR,
-				'crypto_low24h'		: data.DISPLAY[crypto][currency].LOW24HOUR,
-				'crypto_lastprice'	: data.DISPLAY[crypto][currency].PRICE,
-				'crypto_total'		: data.DISPLAY[crypto][currency].SUPPLY,
-				'crypto_mktcap'		: data.DISPLAY[crypto][currency].MKTCAP,
-				'crypto_vol24h'		: data.DISPLAY[crypto][currency].VOLUME24HOUR,
-				'crypto_voldot24h'	: data.DISPLAY[crypto][currency].VOLUME24HOURTO,
+				'crypto_open24h'	: data.DISPLAY[symbol][currency].OPEN24HOUR,
+				'crypto_high24h'	: data.DISPLAY[symbol][currency].HIGH24HOUR,
+				'crypto_low24h'		: data.DISPLAY[symbol][currency].LOW24HOUR,
+				'crypto_lastprice'	: data.DISPLAY[symbol][currency].PRICE,
+				'crypto_total'		: data.DISPLAY[symbol][currency].SUPPLY,
+				'crypto_mktcap'		: data.DISPLAY[symbol][currency].MKTCAP,
+				'crypto_vol24h'		: data.DISPLAY[symbol][currency].VOLUME24HOUR,
+				'crypto_voldot24h'	: data.DISPLAY[symbol][currency].VOLUME24HOURTO,
 			}
 
 			for (var property in data) {
@@ -64,7 +71,7 @@ get_header();
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
 									<h1><?php echo get_the_title(); ?></h1>
-									<div class="price-index-summary-column col-md-9">
+									<div class="price-index-summary-column col-md-9 col-sm-12">
 										<div class="row">
 											<div class="col-md-4">
 											</div>
@@ -106,7 +113,7 @@ get_header();
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-12">
 									</div>
 								</div>
 							</div>
