@@ -1044,7 +1044,7 @@ url = 'https://api.cointrend.club/dataByPeriod/' + cccscale + '?aggregate=' + cc
 
 var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 var loader = document.getElementById('loaderccc');
-loader.style.display = 'block';
+// loader.style.display = 'block';
 
 xhr.open('get', url, true);
 xhr.onreadystatechange = function() {
@@ -1065,7 +1065,7 @@ cccglobal_data[ccctsym][cccperiod][market] = {data: data.Data, timeout: new Date
 
 if (loading_counter == 0) {
 cccupdating = false;
-loader.style.display = 'none';
+// loader.style.display = 'none';
 
 cccRedrawChart(selected_markets);
 }
