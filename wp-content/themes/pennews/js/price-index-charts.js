@@ -699,7 +699,7 @@ style.sheet.insertRule(selector+"{"+styleRules+"}",0);
 var cccglobal_data = {};
 var cccupdating = false;
 var cccloading_counter = 0;
-var cccfsym = 'BTC';
+var cccfsym = GLOBAL_SYMBOL;
 var ccctsym = 'USD';
 
 cccscale = 'histohour';
