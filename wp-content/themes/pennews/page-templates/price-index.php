@@ -125,19 +125,18 @@ $symbol = $symbols[get_the_ID()];
 
 		function toggleCurrency(c) {
 			currency = c;
-
-			var elems = document.querySelectorAll(".currency-item.active");
-			[].forEach.call(elems, function(el) {
-			    el.classList.remove("active");
-			});
-
 			updateOriginPrices();
 		}
  
 	    var buttons = document.querySelectorAll('li.currency-item');
 		[].forEach.call(buttons, function(el) {
 			el.addEventListener('click', function(e) {
-				resetSummaryDetails();
+				// remove active class
+				var elems = document.querySelectorAll(".currency-item.active");
+				[].forEach.call(elems, function(el) {
+				    el.classList.remove("active");
+				});
+
 				e.target.parentElement.className += ' active';
 				toggleCurrency(e.target.innerHTML);
 			});
