@@ -1,8 +1,6 @@
 <?php
 //////////////////
 // Tell WordPress how to interpret the cryptopedia URL structure
-// 
-// 
 /////////////////
 // Custom Post Types
 add_action( 'init', 'customtax_cryptopedia_tax' );
@@ -12,11 +10,6 @@ add_filter( 'rewrite_rules_array', 'pennews_add_rewrite_rules' );
 add_filter( 'post_type_link', 'pennews_filter_post_type_link', 10, 2 );
 
 
-
-
-
-///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 // Start
 
@@ -28,13 +21,7 @@ function pennews_add_rewrite_rules( $rules ) {
   return array_merge( $new, $rules ); // Ensure our rules come first
 }
 
-/**
- * Handle the '%project_category%' URL placeholder
- *
- * @param str $link The link to the post
- * @param WP_Post object $post The post object
- * @return str
- */
+
 function pennews_filter_post_type_link( $link, $post ) {
   if ( $post->post_type == 'cryptopedia' ) {
     if ( $cats = get_the_terms( $post->ID, 'cryptopedia_tax' ) ) {
@@ -44,17 +31,6 @@ function pennews_filter_post_type_link( $link, $post ) {
   return $link;
 }
 
-
-
-
-// POST TYPE
-// Used for registering cpt_project custom post type
-// $post_type_args = array(
-//   'rewrite' => array(
-//     'slug' => 'projects/%project_category%',
-//     'with_front' => true
-//   )
-// );
 
 function cpt_cryptopedia() {
 
@@ -91,16 +67,6 @@ function cpt_cryptopedia() {
   register_post_type( "cryptopedia", $args );
 }
 
-// TAXONOMY
-// Some of the args being passed to register_taxonomy() for 'cpt_project_category'
-// $taxonomy_args = array(
-//   'rewrite' => array(
-//     'slug' => 'projects',
-//     'with_front' => true
-//   )
-// );
-
-
 function customtax_cryptopedia_tax() {
 
   /**
@@ -130,3 +96,20 @@ function customtax_cryptopedia_tax() {
   );
   register_taxonomy( "cryptopedia_tax", array( "cryptopedia" ), $args );
 }
+
+//END
+////////////////////////////////////////////////////////////////////
+
+
+function crypto_widget(){
+    register_sidebar( array(
+        'name' => __( 'Guides Widget', 'pennews-child' ),
+        'id' => 'crypto_widget',
+        'description' => __( 'Page Contents and Section Guide', 'pennews-child' ),
+        'before_widget' => '<aside>',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="penci-block__title">',
+        'after_title' => '</h4>',
+    ) );
+}
+add_action( 'widgets_init', 'crypto_widget' );

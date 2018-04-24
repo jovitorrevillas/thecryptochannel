@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'thecryptobeta');
+define('DB_NAME', 'cryptochannel');
 
 /** MySQL database username */
-define('DB_USER', 'thecryptobeta');
+define('DB_USER', 'cryptochannel');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'WMc5960EoH3gQgjKxfzJUWUM');
+define('DB_PASSWORD', 'bx+FVDaSc3vop_KYyF+wtljp');
 
 /** MySQL hostname */
-define('DB_HOST', 'thecryptobeta.mysql.us1.frbit.com');
+define('DB_HOST', 'cryptochannel.mysql.us1.frbit.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
