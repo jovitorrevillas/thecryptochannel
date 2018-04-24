@@ -23,7 +23,8 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 	dynamic_sidebar( 'footer-signup-form' );
 }
 ?>
-<?php penci_render_google_adsense( 'penci_general_ad_above_footer' ); ?>
+<?php penci_render_google_adsense( 'penci_general_ad_above_footer' );
+if(!is_single()) : ?>
 	<footer id="colophon" class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
 		<?php clean_custom_menu("menu-2"); ?>
 
@@ -86,7 +87,7 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 		</div>
 
 	</footer><!-- #colophon -->
-<?php } ?>
+<?php endif; } ?>
 </div><!-- #page -->
 
 <?php get_template_part( 'template-parts/footer/mobile-sidebar' ); ?>

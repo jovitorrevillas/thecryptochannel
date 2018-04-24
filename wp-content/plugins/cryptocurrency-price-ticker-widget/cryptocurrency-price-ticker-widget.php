@@ -282,7 +282,7 @@ function generate_html($coin,$type,$display_logo,$display_changes,$ticker_positi
 				$coin_id = $coin->id;
 				$coin_symbol =$coin->symbol;
                 $coin_slug = strtolower($coin_name);
-                $coin_price = '<i class="fa fa-usd" aria-hidden="true"></i>' . round($coin->price_usd, 2);
+                $coin_price = '<i class="fa fa-usd" aria-hidden="true"></i>' . number_format((float)$coin->price_usd, 2, '.', '');
                 $percent_change_24h = $coin->percent_change_24h . '%';
                 $change_sign ='<i class="fa fa-arrow-up" aria-hidden="true"></i>';
                 $change_class = "up";

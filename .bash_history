@@ -48,3 +48,14 @@ git push origin master
 git add .
 git commit -m "4/23"
 git push origin master
+git remote add origin https://github.com/jovitorrevillas/thecryptochannel.git
+git remote add origin http://github.com/jovitorrevillas/thecryptochannel.git
+git init
+git remote add origin https://github.com/jovitorrevillas/thecryptochannel.git
+git pull origin master
+git remote add beta cryptochannel.c933mwj283hjlhu1@deploy.us1.frbit.com:cryptochannel.git
+git add .
+git commit -m "First Commit"
+git push beta master
+nano wp-config.php
+vim wp-config.php

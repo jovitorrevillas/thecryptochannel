@@ -1,6 +1,20 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'enqueue_site_script' );
+
+add_shortcode('about_sc','about_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
+
+add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
+add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
+
+add_action( 'add_meta_boxes', 'add_events_meta_box' ); //ADD CUSTOM META BOX --EVENTS DETAILS
+add_action( 'save_post', 'events_meta_box_save' );	// SAVE CUSTOM META BOX DATA --EVENTS DETAILS
+
+
+
+include ('custom_post_types.php');
+include ('rewrite_rule_guides.php');
+
 function theme_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'penci-style-child', get_stylesheet_directory_uri() . '/style.css', array( 'parent-style' ), wp_get_theme()->get( 'Version' ) );
@@ -8,7 +22,7 @@ function theme_enqueue_styles() {
 
 // Main.js
 function enqueue_site_script() {
-    wp_enqueue_script( 'site-main', get_template_directory_uri() . '-child/main.js', array(jquery), '1.0.0', true );
+    wp_enqueue_script( 'site-main', get_template_directory_uri() . '-child/main.js', array('jquery'), '1.0.0', true );
 }
 
 function clean_custom_menu( $theme_location ) {
@@ -157,76 +171,12 @@ function about_sc_handler($content,$tag){
         $tempo .= '</div>';
 
     else :
-        $tempo = esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
+        $tempo = esc_html_e( 'No members found yet!', 'text-domain' );
     endif;
     return $tempo;
 }
 
-function cptui_register_my_cpts_people() {
 
-	/**
-	 * Post Type: peoples.
-	 */
-
-	$labels = array(
-		"name" => __( "peoples", "pennews-child" ),
-		"singular_name" => __( "person", "pennews-child" ),
-	);
-
-	$args = array(
-		"label" => __( "peoples", "pennews-child" ),
-		"labels" => $labels,
-		"description" => "",
-		"public" => true,
-		"publicly_queryable" => true,
-		"show_ui" => true,
-		"show_in_rest" => false,
-		"rest_base" => "",
-		"has_archive" => false,
-		"show_in_menu" => true,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"rewrite" => array( "slug" => "people", "with_front" => true ),
-		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail" ),
-		"taxonomies" => array( "people_tax" ),
-	);
-
-	register_post_type( "people", $args );
-}
-
-
-function cptui_register_my_taxes_people_tax() {
-
-	/**
-	 * Taxonomy: team.
-	 */
-
-	$labels = array(
-		"name" => __( "team", "pennews-child" ),
-		"singular_name" => __( "team", "pennews-child" ),
-	);
-
-	$args = array(
-		"label" => __( "team", "pennews-child" ),
-		"labels" => $labels,
-		"public" => true,
-		"hierarchical" => false,
-		"label" => "team",
-		"show_ui" => true,
-		"show_in_menu" => true,
-		"show_in_nav_menus" => true,
-		"query_var" => true,
-		"rewrite" => array( 'slug' => 'people_tax', 'with_front' => true, ),
-		"show_admin_column" => true,
-		"show_in_rest" => true,
-		"rest_base" => "",
-		"show_in_quick_edit" => false,
-	);
-	register_taxonomy( "people_tax", array( "people" ), $args );
-}
 
 //CREATE CUSTOM METABOXES --ABOUT
 
@@ -284,16 +234,82 @@ function links_meta_box_save( $post_id )
       
 }
 
-function my_theme_scripts() {
-	if(is_page(483)) {
-		wp_enqueue_script('ckeditor', '//cdn.ckeditor.com/4.9.2/full/ckeditor.js');
-	}
+//CREATE CUSTOM METABOXES --EVENTS
+
+function add_events_meta_box(){
+	add_meta_box( 'events_id', 'Event Details', 'html_events_metabox', 'events', 'normal', 'default' );
 }
 
-add_shortcode('about_sc','about_sc_handler');
-add_action( 'init', 'cptui_register_my_cpts_people' );
-add_action( 'init', 'cptui_register_my_taxes_people_tax' );
-add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
-add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
+function html_events_metabox(){
+	global $post;
+	$values = get_post_custom( $post->ID );
+    $eurl_text = isset( $values['event_url_mb'] ) ? esc_attr($values['event_url_mb'][0]) : '';
+	$from_text = isset( $values['from_date_mb'] ) ?  esc_attr($values['from_date_mb'][0]) : '';
+	$to_text = isset( $values['to_date_mb'] ) ?  esc_attr($values['to_date_mb'][0]) : '';
+    $eadd_text = isset( $values['event_address_mb'] ) ?  esc_attr($values['event_address_mb'][0]) : '';
+	
+	wp_nonce_field( 'events_nonce', 'meta_box_nonce' );
+	?>
+
+
+<label for="event_url_mb"><strong>Event URL</strong></label><br>
+    <input type="text" name="event_url_mb" id="event_url_mb" value="<?=$eurl_text?>" />
+<br><br>
+
+	<label for="event_dates"><strong>Event Date</strong></label><br>
+    &nbsp;&nbsp;<label for="from_date_mb"><i>From</i></label><input type="text" class="from-date" name="from_date_mb" id="from_date_mb" value="<?=$from_text?>" /><br>
+	&nbsp;&nbsp;<label for="to_date_mb"><i>To</i></label><input type="text" class="to-date" name="to_date_mb" id="to_date_mb" value="<?=$to_text?>" /><br>
+
+<br>
+	<label for="event_dates"><strong>Event Location</strong></label><br>
+	<input type="text" name="event_address_mb" id="event_address_mb" value="<?=$eadd_text?>"/>
+    <?php
+}
+
+function events_meta_box_save( $post_id )
+{
+    // Bail if we're doing an auto save
+    if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+     
+    // if our nonce isn't there, or we can't verify it, bail
+    if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'events_nonce' ) ) return;
+     
+    // if our current user can't edit this post, bail
+    if( !current_user_can( 'edit_post', $post_id ) ) return;
+	
+	$allowed = array( 
+        'a' => array( // on allow a tags
+            'href' => array() // and those anchors can only have href attribute
+        )
+    );
+	
+	// Make sure your data is set before trying to save it
+    if( array_key_exists('event_url_mb', $_POST) )
+        update_post_meta( $post_id, 'event_url_mb', wp_kses( $_POST['event_url_mb'], $allowed ) );
+
+	
+	if( array_key_exists('from_date_mb', $_POST) )
+        update_post_meta( $post_id, 'from_date_mb', wp_kses( $_POST['from_date_mb'], $allowed ) );
+	
+	if( array_key_exists('to_date_mb', $_POST) )
+        update_post_meta( $post_id, 'to_date_mb', wp_kses( $_POST['to_date_mb'], $allowed ) );
+	
+	if( array_key_exists('event_address_mb', $_POST) )
+        update_post_meta( $post_id, 'event_address_mb', wp_kses( $_POST['event_address_mb'], $allowed ) );
+	
+      
+}
+
+function my_theme_scripts() {
+	if(is_page(483)) {
+	    wp_enqueue_style( 'bootstrap-datetimepicker-css', '//rawcdn.githack.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css');
+		wp_enqueue_script( 'ckeditor', '//cdn.ckeditor.com/4.9.2/full/ckeditor.js');
+		wp_enqueue_script( 'moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js');
+		wp_enqueue_script( 'bootstrap-datetimepicker-js', '//rawcdn.githack.com/AuspeXeu/bootstrap-datetimepicker/master/js/bootstrap-datetimepicker.min.js');
+	}
+
+}
 
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
+
+
