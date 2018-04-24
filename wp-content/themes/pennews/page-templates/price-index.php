@@ -121,15 +121,15 @@ $symbol = $symbols[get_the_ID()];
 											<div class="col-md-4">
 												<h2 id="crypto_lastpriceH">-</h2>
 												<div class="main-summary">
-													<div class="field">
+													<div class="highlight">
 														<label class="pull-left">DAY</label>
 														<span id="crypto_daily" class="pull-right">-</span>
 													</div>
-													<div class="field">
+													<div class="highlight">
 														<label class="pull-left">WEEK</label>
 														<span id="crypto_weekly" class="pull-right">-</span>
 													</div>
-													<div class="field">
+													<div class="highlight">
 														<label class="pull-left">MONTH</label>
 														<span id="crypto_monthly" class="pull-right">-</span>
 													</div>
