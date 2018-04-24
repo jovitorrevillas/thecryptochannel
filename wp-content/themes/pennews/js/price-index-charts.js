@@ -1252,11 +1252,11 @@ var tabsContainer = document.createElement("div");
 tabsContainer.style.overflow = 'auto';
 tabsContainer.className = 'tabContainer';
 
-logo = document.createElement('div');
-logo.className = 'price-index-logo';
-logo.innerHTML	= '<img src="https://pricewidgets.cointelegraph.com/logo.svg" height="35" style="float:right" class="visible-sm"/><img src="https://pricewidgets.cointelegraph.com/logo.svg" height="40" class="visible-xs"/><img src="https://pricewidgets.cointelegraph.com/logo.svg" height="40" style="float:right" class="hidden-xs hidden-sm"/>';
-//logo.style.float = 'right';
-tabsContainer.appendChild(logo);
+// logo = document.createElement('div');
+// logo.className = 'price-index-logo';
+// logo.innerHTML	= '<img src="https://pricewidgets.cointelegraph.com/logo.svg" height="35" style="float:right" class="visible-sm"/><img src="https://pricewidgets.cointelegraph.com/logo.svg" height="40" class="visible-xs"/><img src="https://pricewidgets.cointelegraph.com/logo.svg" height="40" style="float:right" class="hidden-xs hidden-sm"/>';
+// //logo.style.float = 'right';
+// tabsContainer.appendChild(logo);
 
 var ToSymbolsDisplay = [];
 var tabElements = [];
