@@ -126,7 +126,7 @@ $symbol = $symbols[get_the_ID()];
 												<li><a href="#">RUR</a></li>
 											</ul>
 										</div>
-										<div class="row">
+										<div class="row other-summary">
 											<div class="col-md-4">
 												<h2 id="crypto_lastpriceH">-</h2>
 												<div class="main-summary">
