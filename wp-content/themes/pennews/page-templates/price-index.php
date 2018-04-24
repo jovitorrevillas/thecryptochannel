@@ -18,7 +18,7 @@ $symbol = $symbols[get_the_ID()];
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		var currency = "USD";
-		var symbol = <?php echo $symbol; ?>;
+		var symbol = <?php echo "\"$symbol\""; ?>;
 
 		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currency;
 		var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
