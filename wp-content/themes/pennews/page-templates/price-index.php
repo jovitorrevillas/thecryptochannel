@@ -88,7 +88,7 @@ $symbol = $symbols[get_the_ID()];
 		}
 
 		function updateOriginPrices() {
-			var url = 'https://api.cointrend.club/data/priceHistory?fsym=' + symbol + '&tsyms=' + currency;
+			var url = 'https://api.cointrend.club/data/priceHistory?fsym=' + symbol + '&tsyms=USD,EUR,GBP,JPY,RUR';
 			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 			xhr.open('get', url, true);
@@ -106,7 +106,7 @@ $symbol = $symbols[get_the_ID()];
 		}
 
 		function updateSummary(originPrices) {
-			var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currency;
+			var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=USD,EUR,GBP,JPY,RUR";
 			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 			xhr.open('get', url, true);
