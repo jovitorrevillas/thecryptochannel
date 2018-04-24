@@ -225,7 +225,7 @@ $symbol = $symbols[get_the_ID()];
 									<div class="col-md-3 col-sm-12">
 									</div>
 									<div class="col-md-9" id="coinchart">
-										<script type="text/javascript"> window.addEventListener ('DOMContentLoaded', function() { var baseUrl = "https://pricewidgets.cointelegraph.com/"; var scripts = document.getElementsByTagName("script"); var embedder = document.getElementById("coinchart"); (function () { var appName = encodeURIComponent(window.location.hostname); if (appName == "") { appName = "local"; } var s = document.createElement("script"); s.type = "text/javascript"; s.async = false; var theUrl = baseUrl + 'serve/v3/coin/chart?fsym=BTC&tsyms=USD,EUR,GBP,JPY,RUR'; s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName + "?v=1.20"; embedder.append(s); })(); }); </script>
+										<!-- <script type="text/javascript"> window.addEventListener ('DOMContentLoaded', function() { var baseUrl = "https://pricewidgets.cointelegraph.com/"; var scripts = document.getElementsByTagName("script"); var embedder = document.getElementById("coinchart"); (function () { var appName = encodeURIComponent(window.location.hostname); if (appName == "") { appName = "local"; } var s = document.createElement("script"); s.type = "text/javascript"; s.async = false; var theUrl = baseUrl + 'serve/v3/coin/chart?fsym=BTC&tsyms=USD,EUR,GBP,JPY,RUR'; s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName + "?v=1.20"; embedder.append(s); })(); }); </script> -->
 										<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-charts.js"></script>
 									</div>
 								</div>
