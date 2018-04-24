@@ -135,7 +135,13 @@ $symbol = $symbols[get_the_ID()];
 			resetSummaryDetails();
 			updateOriginPrices();
 		}
-
+ 
+	    var buttons = document.querySelectorAll('li.currency-item');
+		[].forEach.call(buttons, function(el) {
+			el.addEventListener('click', function(e) {
+				toggleCurrency('USD');
+			});
+		});
 		// 
 		updateOriginPrices();
 	});
