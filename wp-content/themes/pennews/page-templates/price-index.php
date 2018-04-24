@@ -130,7 +130,6 @@ $symbol = $symbols[get_the_ID()];
 			[].forEach.call(elems, function(el) {
 			    el.classList.remove("active");
 			});
-			this.className += ' active';
 
 			resetSummaryDetails();
 			updateOriginPrices();
@@ -139,8 +138,8 @@ $symbol = $symbols[get_the_ID()];
 	    var buttons = document.querySelectorAll('li.currency-item');
 		[].forEach.call(buttons, function(el) {
 			el.addEventListener('click', function(e) {
-				console.log(e);
-				toggleCurrency('USD');
+				e.target.className += ' active';
+				toggleCurrency(e.target.innerHTML);
 			});
 		});
 		// 
