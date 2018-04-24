@@ -131,14 +131,13 @@ $symbol = $symbols[get_the_ID()];
 			    el.classList.remove("active");
 			});
 
-			resetSummaryDetails();
 			updateOriginPrices();
 		}
  
 	    var buttons = document.querySelectorAll('li.currency-item');
 		[].forEach.call(buttons, function(el) {
 			el.addEventListener('click', function(e) {
-				console.log(e.target.parentElement);
+				resetSummaryDetails();
 				e.target.parentElement.className += ' active';
 				toggleCurrency(e.target.innerHTML);
 			});
