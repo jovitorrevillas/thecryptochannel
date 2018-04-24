@@ -282,7 +282,7 @@ function generate_html($coin,$type,$display_logo,$display_changes,$ticker_positi
 				$coin_id = $coin->id;
 				$coin_symbol =$coin->symbol;
                 $coin_slug = strtolower($coin_name);
-                $coin_price = '<i class="fa fa-usd" aria-hidden="true"></i>' . $coin->price_usd;
+                $coin_price = '<i class="fa fa-usd" aria-hidden="true"></i>' . round($coin->price_usd, 2);
                 $percent_change_24h = $coin->percent_change_24h . '%';
                 $change_sign ='<i class="fa fa-arrow-up" aria-hidden="true"></i>';
                 $change_class = "up";
@@ -360,7 +360,7 @@ function generate_html($coin,$type,$display_logo,$display_changes,$ticker_positi
 			$body = wp_remote_retrieve_body( $request );
 			$coinslist = json_decode( $body );
 			if( ! empty( $coinslist ) ) {
-			 set_transient( 'ccpw-coins', $coinslist, HOUR_IN_SECONDS);
+			 set_transient( 'ccpw-coins', $coinslist, 30);
 			}
 		 }
 		

@@ -45,3 +45,6 @@ git add *
 git status
 git commit -m "Push as of 4/23/2018 11:15am"
 git push origin master
+git add .
+git commit -m "4/23"
+git push origin master
