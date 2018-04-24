@@ -120,6 +120,10 @@ $symbol = $symbols[get_the_ID()];
 										<div class="row currency-selection">
 											<ul class="nav nav-pills">
 												<li class="active"><a href="#">USD</a></li>
+												<li><a href="#">EUR</a></li>
+												<li><a href="#">GBP</a></li>
+												<li><a href="#">JPY</a></li>
+												<li><a href="#">RUR</a></li>
 											</ul>
 										</div>
 										<div class="row">
