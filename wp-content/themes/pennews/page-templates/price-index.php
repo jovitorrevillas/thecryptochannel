@@ -20,6 +20,28 @@ $symbol = $symbols[get_the_ID()];
 		var currency = "USD";
 		var symbol = <?php echo "\"$symbol\""; ?>;
 
+		function resetSummaryDetails() {
+			var data = {
+				'crypto_open24h'	: '-',
+				'crypto_high24h'	: '-',
+				'crypto_low24h'		: '-',
+				'crypto_lastprice'	: '-',
+				'crypto_lastpriceH'	: '-',
+				'crypto_total'		: '-',
+				'crypto_mktcap'		: '-',
+				'crypto_vol24h'		: '-',
+				'crypto_voldot24h'	: '-',
+				'crypto_daily'		: '-',
+				'crypto_weekly'		: '-',
+				'crypto_monthly'	: '-',
+			}
+
+			for (var property in data) {
+				var elem = document.getElementById(property);
+				elem.innerHTML = data[property];
+			}
+		}
+
 		function fillSummaryDetails(data, originPrices) {
 			// PERCENTAGES
 			// -- DAILY
@@ -101,6 +123,19 @@ $symbol = $symbols[get_the_ID()];
 			xhr.send();
 		}
 
+		function toggleCurrency(c) {
+			currency = c;
+
+			var elems = document.querySelectorAll(".currency-item.active");
+			[].forEach.call(elems, function(el) {
+			    el.classList.remove("active");
+			});
+			this.className += ' active';
+
+			resetSummaryDetails();
+			updateOriginPrices();
+		}
+
 		// 
 		updateOriginPrices();
 	});
@@ -119,11 +154,11 @@ $symbol = $symbols[get_the_ID()];
 									<div class="price-index-summary-column col-md-9 col-sm-12">
 										<div class="row currency-selection">
 											<ul class="nav nav-pills">
-												<li class="active"><a href="#">USD</a></li>
-												<li><a href="#">EUR</a></li>
-												<li><a href="#">GBP</a></li>
-												<li><a href="#">JPY</a></li>
-												<li><a href="#">RUR</a></li>
+												<li class="currency-item active"><a onclick="toggleCurrency('USD')">USD</a></li>
+												<li class="currency-item"><a onclick="toggleCurrency('EUR')">EUR</a></li>
+												<li class="currency-item"><a onclick="toggleCurrency('GBP')">GBP</a></li>
+												<li class="currency-item"><a onclick="toggleCurrency('JPY')">JPY</a></li>
+												<li class="currency-item"><a onclick="toggleCurrency('RUR')">RUR</a></li>
 											</ul>
 										</div>
 										<div class="row other-summary">
