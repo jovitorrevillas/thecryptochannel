@@ -139,6 +139,7 @@ $symbol = $symbols[get_the_ID()];
 	    var buttons = document.querySelectorAll('li.currency-item');
 		[].forEach.call(buttons, function(el) {
 			el.addEventListener('click', function(e) {
+				console.log(e);
 				toggleCurrency('USD');
 			});
 		});
@@ -160,11 +161,11 @@ $symbol = $symbols[get_the_ID()];
 									<div class="price-index-summary-column col-md-9 col-sm-12">
 										<div class="row currency-selection">
 											<ul class="nav nav-pills">
-												<li class="currency-item active"><a href="">USD</a></li>
-												<li class="currency-item"><a href="">EUR</a></li>
-												<li class="currency-item"><a href="">GBP</a></li>
-												<li class="currency-item"><a href="">JPY</a></li>
-												<li class="currency-item"><a href="">RUR</a></li>
+												<li class="currency-item active"><a>USD</a></li>
+												<li class="currency-item"><a>EUR</a></li>
+												<li class="currency-item"><a>GBP</a></li>
+												<li class="currency-item"><a>JPY</a></li>
+												<li class="currency-item"><a>RUR</a></li>
 											</ul>
 										</div>
 										<div class="row other-summary">
