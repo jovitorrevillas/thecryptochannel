@@ -138,7 +138,7 @@ $symbol = $symbols[get_the_ID()];
 	    var buttons = document.querySelectorAll('li.currency-item');
 		[].forEach.call(buttons, function(el) {
 			el.addEventListener('click', function(e) {
-				console.log(e);
+				console.log(e.target.parentElement);
 				e.target.parentElement.className += ' active';
 				toggleCurrency(e.target.innerHTML);
 			});
