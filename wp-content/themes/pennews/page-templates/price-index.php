@@ -224,6 +224,12 @@ $symbol = $symbols[get_the_ID()];
 									</div>
 									<div class="col-md-3 col-sm-12">
 									</div>
+									<div class="col-md-9" id="coinchart">
+										<script type="text/javascript"> window.addEventListener ('DOMContentLoaded', function() { var baseUrl = "https://pricewidgets.cointelegraph.com/"; var scripts = document.getElementsByTagName("script"); var embedder = document.getElementById("coinchart"); (function () { var appName = encodeURIComponent(window.location.hostname); if (appName == "") { appName = "local"; } var s = document.createElement("script"); s.type = "text/javascript"; s.async = false; var theUrl = baseUrl + 'serve/v3/coin/chart?fsym=BTC&tsyms=USD,EUR,GBP,JPY,RUR'; s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName + "?v=1.20"; embedder.append(s); })(); }); </script>
+										<script type="text/javascript" src="https://pricewidgets.cointelegraph.com/serve/v3/coin/chart?fsym=BTC&amp;tsyms=USD,EUR,GBP,JPY,RUR&amp;app=cointelegraph.com?v=1.20"></script>
+										<div class="ccc-widget ccc-chart-v3">
+										</div>
+									</div>
 								</div>
 							</div>
 						</article>
