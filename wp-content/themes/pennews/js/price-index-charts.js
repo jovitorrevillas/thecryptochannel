@@ -700,7 +700,7 @@ var cccglobal_data = {};
 var cccupdating = false;
 var cccloading_counter = 0;
 var cccfsym = 'BTC';
-console.log(GLOBAL_SYMBOL);
+console.log(GLOBAL_SYMBOL); 
 var ccctsym = 'USD';
 
 cccscale = 'histohour';
