@@ -20,15 +20,31 @@ $symbol = $symbols[get_the_ID()];
 		var currency = "USD";
 		var symbol = <?php echo "\"$symbol\""; ?>;
 
-		var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currency;
-		var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+		function fillSummaryDetails(data, originPrices) {
+			// PERCENTAGES
+			// -- DAILY
+			var Change1D = data.RAW[symbol][currency].PRICE - data.RAW[symbol][currency].OPEN24HOUR;
+			var ChangePct1D = Change1D / data.RAW[symbol][currency].OPEN24HOUR * 100;
+			ChangePct1D = (Math.floor(ChangePct1D * 100) / 100).toFixed(2);
 
-		function fillSummary(data) {
+			// -- WEEKLY
+			var Change1W = data.RAW[symbol][currency].PRICE - originPrices[currency].WeekOpen;
+			var ChangePct1W = Change1W / originPrices[currency].WeekOpen * 100;
+			ChangePct1W = (Math.floor(ChangePct1W * 100) / 100).toFixed(2);
+			ChangePct1W = isFinite(ChangePct1W) ? ChangePct1W : 0;
+
+			// -- MONTHLY
+			var Change1M = data.RAW[symbol][currency].PRICE - originPrices[currency].MonthOpen;
+			var ChangePct1M = Change1M / originPrices[currency].MonthOpen * 100;
+			ChangePct1M = (Math.floor(ChangePct1M * 100) / 100).toFixed(2);
+			ChangePct1M = isFinite(ChangePct1M) ? ChangePct1M : 0;
+
 			var data = {
 				'crypto_open24h'	: data.DISPLAY[symbol][currency].OPEN24HOUR,
 				'crypto_high24h'	: data.DISPLAY[symbol][currency].HIGH24HOUR,
 				'crypto_low24h'		: data.DISPLAY[symbol][currency].LOW24HOUR,
 				'crypto_lastprice'	: data.DISPLAY[symbol][currency].PRICE,
+				'crypto_lastpriceH'	: data.DISPLAY[symbol][currency].PRICE,
 				'crypto_total'		: data.DISPLAY[symbol][currency].SUPPLY,
 				'crypto_mktcap'		: data.DISPLAY[symbol][currency].MKTCAP,
 				'crypto_vol24h'		: data.DISPLAY[symbol][currency].VOLUME24HOUR,
@@ -36,28 +52,57 @@ $symbol = $symbols[get_the_ID()];
 			}
 
 			for (var property in data) {
-				console.log(document.getElementById(property));
 				var elem = document.getElementById(property);
 				elem.innerHTML = data[property];
 			}
+
+			document.getElementById('crypto_daily').innerHTML = Math.abs(ChangePct1D) + '%';
+			document.getElementById('crypto_weekly').innerHTML = Math.abs(ChangePct1W) + '%';
+			document.getElementById('crypto_monthly').innerHTML = Math.abs(ChangePct1M) + '%';
+
+			document.getElementById('crypto_daily').className = (ChangePct1D > 0) ? 'positive' : 'negative';
+			document.getElementById('crypto_weekly').className = (ChangePct1W > 0) ? 'positive' : 'negative';
+			document.getElementById('crypto_monthly').className = (ChangePct1M > 0) ? 'positive' : 'negative';
 		}
 
-		xhr.open('get', url, true);
-		xhr.onreadystatechange = function() {
-			var status;
-			var data;
+		function updateOriginPrices() {
+			var url = 'https://api.cointrend.club/data/priceHistory?fsym=' + symbol + '&tsyms=' + currency;
+			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
-			if (xhr.readyState == 4) {
-				status = xhr.status;
+			xhr.open('get', url, true);
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4) {
+					var status = xhr.status;
 
-				if (status == 200) {
-					data = JSON.parse(xhr.responseText);
-					fillSummary(data);
+					if (status == 200) {
+						var data = JSON.parse(xhr.responseText);
+						updateSummary(data);
+					}
 				}
-			}
-		};
+			};
+			xhr.send();
+		}
 
-		xhr.send();
+		function updateSummary(originPrices) {
+			var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currency;
+			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+
+			xhr.open('get', url, true);
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4) {
+					var status = xhr.status;
+
+					if (status == 200) {
+						var data = JSON.parse(xhr.responseText);
+						fillSummaryDetails(data, originPrices);
+					}
+				}
+			};
+			xhr.send();
+		}
+
+		// 
+		updateOriginPrices();
 	});
 </script>
 
@@ -74,6 +119,21 @@ $symbol = $symbols[get_the_ID()];
 									<div class="price-index-summary-column col-md-9 col-sm-12">
 										<div class="row">
 											<div class="col-md-4">
+												<h2 id="crypto_lastpriceH">-</h2>
+												<div class="main-summary">
+													<div class="field">
+														<label class="pull-left">DAY</label>
+														<span id="crypto_daily" class="pull-right">-</span>
+													</div>
+													<div class="field">
+														<label class="pull-left">WEEK</label>
+														<span id="crypto_weekly" class="pull-right">-</span>
+													</div>
+													<div class="field">
+														<label class="pull-left">MONTH</label>
+														<span id="crypto_monthly" class="pull-right">-</span>
+													</div>
+												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="field clearfix">
