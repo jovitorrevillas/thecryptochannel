@@ -82,9 +82,9 @@ $symbol = $symbols[get_the_ID()];
 			document.getElementById('crypto_weekly').innerHTML = Math.abs(ChangePct1W) + '%';
 			document.getElementById('crypto_monthly').innerHTML = Math.abs(ChangePct1M) + '%';
 
-			document.getElementById('crypto_daily').className += (ChangePct1D >= 0) ? ' positive' : ' negative';
-			document.getElementById('crypto_weekly').className += (ChangePct1W >= 0) ? ' positive' : ' negative';
-			document.getElementById('crypto_monthly').className += (ChangePct1M >= 0) ? ' positive' : ' negative';
+			document.getElementById('crypto_daily').className = (ChangePct1D >= 0) ? 'pull-right positive' : 'pull-right negative';
+			document.getElementById('crypto_weekly').className = (ChangePct1W >= 0) ? 'pull-right positive' : 'pull-right negative';
+			document.getElementById('crypto_monthly').className = (ChangePct1M >= 0) ? 'pull-right positive' : 'pull-right negative';
 		}
 
 		function updateOriginPrices() {
