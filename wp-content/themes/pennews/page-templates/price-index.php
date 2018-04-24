@@ -60,9 +60,9 @@ $symbol = $symbols[get_the_ID()];
 			document.getElementById('crypto_weekly').innerHTML = Math.abs(ChangePct1W) + '%';
 			document.getElementById('crypto_monthly').innerHTML = Math.abs(ChangePct1M) + '%';
 
-			document.getElementById('crypto_daily').className = (ChangePct1D > 0) ? 'positive' : 'negative';
-			document.getElementById('crypto_weekly').className = (ChangePct1W > 0) ? 'positive' : 'negative';
-			document.getElementById('crypto_monthly').className = (ChangePct1M > 0) ? 'positive' : 'negative';
+			document.getElementById('crypto_daily').className += (ChangePct1D > 0) ? ' positive' : ' negative';
+			document.getElementById('crypto_weekly').className += (ChangePct1W > 0) ? ' positive' : ' negative';
+			document.getElementById('crypto_monthly').className += (ChangePct1M > 0) ? ' positive' : ' negative';
 		}
 
 		function updateOriginPrices() {
@@ -121,15 +121,15 @@ $symbol = $symbols[get_the_ID()];
 											<div class="col-md-4">
 												<h2 id="crypto_lastpriceH">-</h2>
 												<div class="main-summary">
-													<div class="highlight">
+													<div class="highlight clearfix">
 														<label class="pull-left">DAY</label>
 														<span id="crypto_daily" class="pull-right">-</span>
 													</div>
-													<div class="highlight">
+													<div class="highlight clearfix">
 														<label class="pull-left">WEEK</label>
 														<span id="crypto_weekly" class="pull-right">-</span>
 													</div>
-													<div class="highlight">
+													<div class="highlight clearfix">
 														<label class="pull-left">MONTH</label>
 														<span id="crypto_monthly" class="pull-right">-</span>
 													</div>
