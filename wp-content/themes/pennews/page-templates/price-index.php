@@ -117,6 +117,11 @@ $symbol = $symbols[get_the_ID()];
 								<div class="wpb_wrapper">
 									<h1><?php echo get_the_title(); ?></h1>
 									<div class="price-index-summary-column col-md-9 col-sm-12">
+										<div class="row currency-selection">
+											<ul class="nav nav-pills">
+												<li class="active"><a href="#">USD</a></li>
+											</ul>
+										</div>
 										<div class="row">
 											<div class="col-md-4">
 												<h2 id="crypto_lastpriceH">-</h2>
