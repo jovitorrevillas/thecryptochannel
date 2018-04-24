@@ -1,9 +1,0 @@
-(function($S){
-
-
-			
-		(function(){
-
-		});
-
-});
