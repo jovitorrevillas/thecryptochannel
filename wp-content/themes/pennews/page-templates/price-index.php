@@ -241,7 +241,7 @@ $symbol = $symbols[get_the_ID()];
 									</div>
 									<div class="col-md-4 no-padding">
 										<div class="col-md-12 no-padding cryptocurrency-converter">
-											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="BCH" src="/serve/v2/coin/converter"></script>
+											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="BCH" src="/wp-content/themes/pennews/js/price-index-converter.js"></script>
 										</div>
 									</div>
 								</div>
