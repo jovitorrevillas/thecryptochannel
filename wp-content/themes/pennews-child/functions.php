@@ -3,6 +3,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'enqueue_site_script' );
 
 add_shortcode('about_sc','about_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
+add_shortcode('events_sc','events_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
 
 add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
 add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
@@ -172,6 +173,81 @@ function about_sc_handler($content,$tag){
 
     else :
         $tempo = esc_html_e( 'No members found yet!', 'text-domain' );
+    endif;
+    return $tempo;
+}
+
+function events_sc_handler($content,$tag){  
+
+    $params = array(
+        'post_type'   => 'events',
+        'tax_query'   => array(
+            array(
+                'taxonomy' => 'etype_tax',
+                'field'    => 'slug',
+                'terms'    => $tag
+            )
+        )
+    );
+	
+	print_r($tag);
+	
+    $events = new WP_Query($params);
+    if( $events->have_posts() ) :
+
+
+        $tempo = '
+		<div style="width:100%;padding:5px;">';
+
+            while( $events->have_posts() ) :
+                $events->the_post();
+// 				$eurl = (filter_var(get_post_meta(get_the_ID(),'event_url_mb',true),FILTER_VALIDATE_URL) 
+// 						 ? get_post_meta(get_the_ID(),'event_url_mb',true) : 'You entered an invalid URL!') ;
+	
+				$from = get_post_meta(get_the_ID(),'from_date_mb',true);
+			    $to = get_post_meta(get_the_ID(),'to_date_mb',true);
+				$add = get_post_meta(get_the_ID(),'event_address_mb',true);
+				
+				
+// 				$f = explode("/",$from);
+// 				$t = explode("/",$to);
+
+// 				$yearf = DateTime::createFromFormat('y', $f[2]);
+// 				$yeart = DateTime::createFromFormat('y', $t[2]);
+
+// 				$time = "";
+
+
+// 				if($f[0] == $t[0] && $f[2] == $t[2]){
+
+// 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
+// 						." ".$f[1]."-".$t[1].", ".$yearf->format('Y')
+// 						;
+// 				}else{
+// 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
+// 						." ".$f[1].", ".$yearf->format('Y')." - ".date('F', mktime(0, 0, 0, $t[0], 10))
+// 						." ".$t[1].", ".$yeart->format('Y')
+// 						;
+// 				}
+
+                $tempo .= '
+					<div><a href="#"><h2>'.get_the_title().'</h2></a></div>
+					<div style="display: inline-block;"></div> <div style="display: inline-block;"><b>|					</b></div> <div style="display: inline-block;">'.$add.'</div>
+					<div style="width: 100%;">
+						<p>
+							
+						</p>
+					</div>
+				'; ?>
+
+            <?php
+            endwhile;
+            wp_reset_postdata();
+
+        $tempo .= '</div>';
+
+    else :
+        $tempo = esc_html_e( 'No events were set.', 'text-domain' );
     endif;
     return $tempo;
 }

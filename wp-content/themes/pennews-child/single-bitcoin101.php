@@ -5,7 +5,7 @@ $single_hide_img = penci_get_setting( 'penci_hide_single_featured_img' );
 $align_title     = 'penci-title-' . penci_get_setting( 'penci_single_align_post_title' );
 $single_loadmore = penci_get_setting( 'penci_auto_load_prev_post' );
 ?>
-
+asasdasd
 <?php if ( ! $single_hide_img && has_post_thumbnail() ): ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="entry-media penci-entry-media <?php echo esc_attr( ( penci_post_formats() && ! $single_hide_img ) ? 'penci-active-thumb' : '' ); ?>">
