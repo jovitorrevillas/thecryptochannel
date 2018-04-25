@@ -164,8 +164,10 @@ $symbol = $symbols[get_the_ID()];
 						<article>
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
-									<h1><?php echo get_the_title(); ?></h1>
-									<div class="col-md-8 no-padding">
+									<div class="col-md-12">
+										<h1><?php echo get_the_title(); ?></h1>
+									</div>
+									<div class="col-md-8">
 										<div class="price-index-summary-column col-md-12">
 											<div class="row currency-selection">
 												<ul class="nav nav-pills">
@@ -239,7 +241,7 @@ $symbol = $symbols[get_the_ID()];
 											<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-history.js"></script>
 										</div>
 									</div>
-									<div class="col-md-4 no-padding">
+									<div class="col-md-4">
 										<div class="col-md-12 no-padding cryptocurrency-converter">
 											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="BCH" src="/wp-content/themes/pennews/js/price-index-converter.js"></script>
 										</div>
