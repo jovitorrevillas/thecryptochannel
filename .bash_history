@@ -59,3 +59,33 @@ git commit -m "First Commit"
 git push beta master
 nano wp-config.php
 vim wp-config.php
+git push origin master
+git pull origin master
+git status
+git add .
+git push origin master
+git pull origin master
+git status
+git add .
+git commit -m "4/24 6:51pm"
+git push origin master
+git pull origin master
+cd wp-content/themes/pennews-child/
+ls -l
+rm events.js
+cd .. .. ..
+cd ..
+cd ..
+git status
+git add .
+git add .
+git reset
+git add .
+git add --all
+git commit "4/24 6:54"
+git commit -m "4/24 6:54"
+git push origin master
+git pull origin master
+git pull origin master
+git push origin master
+exit
