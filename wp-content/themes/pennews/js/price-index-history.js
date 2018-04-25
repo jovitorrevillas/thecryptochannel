@@ -141,7 +141,9 @@ embedablePriceInfo.innerHTML = `<div class="histoTitle">Historical Price and Vol
     }
     .histo-filter input {
         outline: none;
-        width:100px;
+        width: 114px;
+        padding: 4px 20px;
+        margin-left: 4px;
     }
     .histo-filter__inputContainer {
         display: inline-block;
@@ -324,4 +326,5 @@ var weekData = [];
 priceWeekLoad(fsym, tsym, histoPeriodDateStart, histoPeriodDateEnd);
 });
 var currentScript = document.currentScript.parentNode;
-window.histoPeriodWidget(currentScript, 'https://api.cointrend.club', 'BTC', 'USD','https://pricewidgets.cointelegraph.com');
+window.histoPeriodWidget(currentScript, 'https://api.cointrend.club', GLOBAL_SYMBOL, 'USD','https://pricewidgets.cointelegraph.com');
+console.log(ccctsym);
