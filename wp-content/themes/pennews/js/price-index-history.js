@@ -240,8 +240,8 @@ setDates();
 
 // Save as functionality
 jQuery(".histo-export a").click(function() {
-let content = $(this).find('span').text();
-$( ".ccc-chart-v3 span:contains(" + content + ")" ).click()
+let content = jQuery(this).find('span').text();
+jQuery( ".ccc-chart-v3 span:contains(" + content + ")" ).click()
 return false;
 })
 }
@@ -250,20 +250,20 @@ function syncDates() {
 jQuery(".chart-filter__from").val(jQuery(".histo-filter__from").val());
 jQuery(".chart-filter__to").val(jQuery(".histo-filter__to").val());
 
-var inst = $.datepicker._getInst(jQuery(".chart-filter__to")[0]);
-$.datepicker._get(inst, 'onSelect').apply(inst.input[0], [jQuery(".chart-filter__to").datepicker('getDate'), inst]);
+var inst = jQuery.datepicker._getInst(jQuery(".chart-filter__to")[0]);
+jQuery.datepicker._get(inst, 'onSelect').apply(inst.input[0], [jQuery(".chart-filter__to").datepicker('getDate'), inst]);
 }
 
 function setDates() {
-let timeStart = $.datepicker.formatDate("@", jQuery(".histo-filter__from").datepicker("getDate"));
-let timeEnd = $.datepicker.formatDate("@", jQuery(".histo-filter__to").datepicker("getDate"));
+let timeStart = jQuery.datepicker.formatDate("@", jQuery(".histo-filter__from").datepicker("getDate"));
+let timeEnd = jQuery.datepicker.formatDate("@", jQuery(".histo-filter__to").datepicker("getDate"));
 if (timeStart > timeEnd) {
 jQuery(".histo-filter__from").datepicker("setDate", "-7d");
 jQuery(".histo-filter__to").datepicker("setDate", timeStart).blur();
 
 }
-histoPeriodDateStart = $.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__from").datepicker("getDate"));
-histoPeriodDateEnd = $.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__to").datepicker("getDate"));
+histoPeriodDateStart = jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__from").datepicker("getDate"));
+histoPeriodDateEnd = jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__to").datepicker("getDate"));
 
 
 
@@ -275,7 +275,7 @@ function loadHistory() {
 loadedHistory.innerHTML = '';
 for (var i = 0; i < weekData.DISPLAY.length; i++) {
 var dayData = weekData.DISPLAY[i];
-var formattedDate = $.datepicker.parseDate("dd-mm-yy", dayData.time);
+var formattedDate = jQuery.datepicker.parseDate("dd-mm-yy", dayData.time);
 var dayRawData = weekData.RAW[i];
 var histoRow1 = document.createElement("div");
 var changeClass = weekData.RAW[i].change > 0 ? 'positive' : 'negative';
@@ -283,7 +283,7 @@ var change = Math.abs(dayRawData.change);
 histoRow1.className = `histoRow ${i % 2 === 0 ? 'striped' : ''}`;
 
 histoRow1.innerHTML = `
-<div class="histoTime ">` + $.datepicker.formatDate("M dd, yy", formattedDate) + `</div>
+<div class="histoTime ">` + jQuery.datepicker.formatDate("M dd, yy", formattedDate) + `</div>
 <div class="histoPrice ">` + dayData.price + `</div>
 <div class="histoVolume ">` + dayData.volume + `</div>
 <div class="histoChange ` + changeClass + `"><span>` + change + `%</span></div>`;
