@@ -327,4 +327,3 @@ priceWeekLoad(fsym, tsym, histoPeriodDateStart, histoPeriodDateEnd);
 });
 var currentScript = document.currentScript.parentNode;
 window.histoPeriodWidget(currentScript, 'https://api.cointrend.club', GLOBAL_SYMBOL, 'USD','https://pricewidgets.cointelegraph.com');
-console.log(ccctsym);

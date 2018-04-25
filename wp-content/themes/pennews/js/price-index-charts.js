@@ -1972,6 +1972,7 @@ dateRangeContainer.innerHTML = `
         position: relative;
         display: block;
         z-index: 1;
+        margin-left: 0 !important;
     }
     .amcharts-export-menu li > ul {
         position: absolute;
