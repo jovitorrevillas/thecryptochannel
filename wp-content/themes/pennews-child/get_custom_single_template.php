@@ -12,6 +12,7 @@ function get_custom_single_template($single_template) {
 
     if ($post->post_type == 'cryptopedia') {
         $terms = get_the_terms($post->ID, 'type');
+        echo $terms . $terms->slug;
         if($terms && !is_wp_error( $terms )) {
             //Make a foreach because $terms is an array but it supposed to be only one term
             foreach($terms as $term){
