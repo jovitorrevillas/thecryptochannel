@@ -7,12 +7,22 @@
 
 get_header();
 $symbols = array(
-	811 => 'BTC',
-	817 => 'BCH',
-	821 => 'ETH',
+	811 => array(
+		'symbol' => 'BTC',
+		'sidebar_news_title' => 'Bitcoin Price News'
+	),
+	817 => array(
+		'symbol' => 'BCH',
+		'sidebar_news_title' => 'Bitcoin Cash Price News'
+	),
+	821 => array(
+		'symbol' => 'ETH',
+		'sidebar_news_title' => 'Etherium Price News'
+	),
 );
 
-$symbol = $symbols[get_the_ID()];
+$symbol = $symbols[get_the_ID()]['symbol'];
+$sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
 
 ?>
 <script type="text/javascript">
@@ -245,6 +255,14 @@ $symbol = $symbols[get_the_ID()];
 										<div class="col-md-12 no-padding cryptocurrency-converter">
 											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="BTC" src="/wp-content/themes/pennews/js/price-index-converter.js"></script>
 										</div>
+
+										<!-- RECENT NEWS -->
+										<div class="col-md-12 no-padding" id="sidebar-price-index">
+											<div class="row related-price-news">
+												<h1><?php echo $sidebar_news_title; ?></h1>
+											</div>
+										</div>
+										<!-- END RECENT NEWS -->
 									</div>
 								</div>
 							</div>
