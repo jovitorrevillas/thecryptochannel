@@ -89,10 +89,10 @@ function customtax_cryptopedia_tax() {
     "show_in_nav_menus" => true,
     "query_var" => true,
     "rewrite" => array( 'slug' => 'cryptopedia', 'with_front' => true, ),
-    "show_admin_column" => false,
-    "show_in_rest" => false,
+    "show_admin_column" => true,
+    "show_in_rest" => true,
     "rest_base" => "cryptopedia_tax",
-    "show_in_quick_edit" => false,
+    "show_in_quick_edit" => true,
   );
   register_taxonomy( "cryptopedia_tax", array( "cryptopedia" ), $args );
 }
