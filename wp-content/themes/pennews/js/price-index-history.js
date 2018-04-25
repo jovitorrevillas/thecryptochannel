@@ -200,15 +200,15 @@ weekCurrentScript.appendChild(embedable);
 // dateRange
 
 
-$(".dateRange").click(function () {
-if ($(".histo-filter").hasClass("active")) {
-$(".histo-filter").removeClass('active')
+jQuery(".dateRange").click(function () {
+if (jQuery(".histo-filter").hasClass("active")) {
+jQuery(".histo-filter").removeClass('active')
 } else {
-$(".histo-filter").addClass('active')
+jQuery(".histo-filter").addClass('active')
 }
 })
 
-$(".histo-filter__from").datepicker({
+jQuery(".histo-filter__from").datepicker({
 dateFormat: "M d, yy",
 maxDate: "-1d",
 firstDay: 1,
@@ -220,10 +220,10 @@ syncDates();
 },500);
 }
 });
-$(".histo-filter__from").datepicker("setDate", -7)
+jQuery(".histo-filter__from").datepicker("setDate", -7)
 
 
-$(".histo-filter__to").datepicker({
+jQuery(".histo-filter__to").datepicker({
 maxDate: "-1d",
 dateFormat: "M d, yy",
 firstDay: 1,
@@ -235,11 +235,11 @@ syncDates();
 },500);
 }
 });
-$(".histo-filter__to").datepicker("setDate", new Date())
+jQuery(".histo-filter__to").datepicker("setDate", new Date())
 setDates();
 
 // Save as functionality
-$(".histo-export a").click(function() {
+jQuery(".histo-export a").click(function() {
 let content = $(this).find('span').text();
 $( ".ccc-chart-v3 span:contains(" + content + ")" ).click()
 return false;
@@ -247,23 +247,23 @@ return false;
 }
 function syncDates() {
 // sync date range chart fields
-$(".chart-filter__from").val($(".histo-filter__from").val());
-$(".chart-filter__to").val($(".histo-filter__to").val());
+jQuery(".chart-filter__from").val(jQuery(".histo-filter__from").val());
+jQuery(".chart-filter__to").val(jQuery(".histo-filter__to").val());
 
-var inst = $.datepicker._getInst($(".chart-filter__to")[0]);
-$.datepicker._get(inst, 'onSelect').apply(inst.input[0], [$(".chart-filter__to").datepicker('getDate'), inst]);
+var inst = $.datepicker._getInst(jQuery(".chart-filter__to")[0]);
+$.datepicker._get(inst, 'onSelect').apply(inst.input[0], [jQuery(".chart-filter__to").datepicker('getDate'), inst]);
 }
 
 function setDates() {
-let timeStart = $.datepicker.formatDate("@", $(".histo-filter__from").datepicker("getDate"));
-let timeEnd = $.datepicker.formatDate("@", $(".histo-filter__to").datepicker("getDate"));
+let timeStart = $.datepicker.formatDate("@", jQuery(".histo-filter__from").datepicker("getDate"));
+let timeEnd = $.datepicker.formatDate("@", jQuery(".histo-filter__to").datepicker("getDate"));
 if (timeStart > timeEnd) {
-$(".histo-filter__from").datepicker("setDate", "-7d");
-$(".histo-filter__to").datepicker("setDate", timeStart).blur();
+jQuery(".histo-filter__from").datepicker("setDate", "-7d");
+jQuery(".histo-filter__to").datepicker("setDate", timeStart).blur();
 
 }
-histoPeriodDateStart = $.datepicker.formatDate("yy-mm-dd", $(".histo-filter__from").datepicker("getDate"));
-histoPeriodDateEnd = $.datepicker.formatDate("yy-mm-dd", $(".histo-filter__to").datepicker("getDate"));
+histoPeriodDateStart = $.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__from").datepicker("getDate"));
+histoPeriodDateEnd = $.datepicker.formatDate("yy-mm-dd", jQuery(".histo-filter__to").datepicker("getDate"));
 
 
 
