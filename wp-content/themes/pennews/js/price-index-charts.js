@@ -628,8 +628,8 @@ AmCharts.translations.export||(AmCharts.translations.export={}),AmCharts.transla
 var cccchart_type = 'line';
 (function() {
 var Currencies = ["USD","EUR","GBP","JPY","RUR"];
-var CurrenciesSymbols = {"USD":"$","EUR":"€","CNY":"¥","JPY":"¥","RUR":"₽"};
-var ExchangesByCurrency = {"USD":["Index","Bitfinex","GDAX","Bitstamp","Gemini","BitTrex","Kraken","HitBTC"],"EUR":["Index","Kraken","Bitstamp","GDAX","Gatecoin","Exmo","Quoine"],"GBP":["Index","Coinfloor","LakeBTC","GDAX","Localbitcoins","Kraken"],"CNY":["Index","OKCoin CNY","Huobi","Localbitcoins"],"JPY":["Index","Coincheck","Zaif","Quoine","LakeBTC"],"RUR":["Index","Livecoin","Exmo"]};
+var CurrenciesSymbols = GLOBAL_CURRENCY_SYMBOLS;
+var ExchangesByCurrency = GLOBAL_CURRENCY_EXCHANGES[GLOBAL_SYMBOL];
 
 var cccCurrentTheme = {
 General: {
