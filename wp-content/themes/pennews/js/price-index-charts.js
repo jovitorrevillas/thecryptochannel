@@ -2437,16 +2437,16 @@ cccUpdateChart();
 function setDates() {
     jQuery(".tabperiods").removeClass("tabperiods_active");
 
-    let timeStart = $.datepicker.formatDate("@", jQuery(".chart-filter__from").datepicker("getDate"));
-    let timeEnd = $.datepicker.formatDate("@", jQuery(".chart-filter__to").datepicker("getDate"));
+    let timeStart = jQuery.datepicker.formatDate("@", jQuery(".chart-filter__from").datepicker("getDate"));
+    let timeEnd = jQuery.datepicker.formatDate("@", jQuery(".chart-filter__to").datepicker("getDate"));
 
     if(timeStart > timeEnd) {
     jQuery(".chart-filter__from").datepicker("setDate", "-30d").blur();
     jQuery(".chart-filter__to").datepicker("setDate", timeStart).blur();
     }
     return {
-        from : $.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__from").datepicker("getDate")),
-        to   : $.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__to").datepicker("getDate")),
+        from : jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__from").datepicker("getDate")),
+        to   : jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__to").datepicker("getDate")),
         numberOfDays : Math.abs((timeEnd - timeStart)/86400000)
     };
 }
