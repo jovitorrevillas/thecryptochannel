@@ -165,7 +165,7 @@ $symbol = $symbols[get_the_ID()];
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
 									<h1><?php echo get_the_title(); ?></h1>
-									<div class="col-md-8">
+									<div class="col-md-8 no-padding">
 										<div class="price-index-summary-column col-md-12">
 											<div class="row currency-selection">
 												<ul class="nav nav-pills">
@@ -232,14 +232,14 @@ $symbol = $symbols[get_the_ID()];
 												</div>
 											</div>
 										</div>
-										<div class="col-md-12" id="coinchart">
+										<div class="col-md-12 no-padding" id="coinchart">
 											<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-charts.js"></script>
 										</div>
-										<div class="col-md-12" id="histoweek">
+										<div class="col-md-12 no-padding" id="histoweek">
 											<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-history.js"></script>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-md-4 no-padding">
 
 									</div>
 								</div>
