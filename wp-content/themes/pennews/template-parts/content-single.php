@@ -1,4 +1,6 @@
 <?php
+global $post;
+
 $single_style = penci_get_setting( 'penci_single_template' );
 
 
@@ -11,4 +13,10 @@ if( $use_option_current ) {
 }
 
 $single_style = $single_style ? $single_style : 'style-1';
-get_template_part( 'template-parts/single/' . $single_style );
+
+if ($post->post_type == 'cryptopedia') {
+	get_template_part( '-child/single-bitcoin101.php');
+}
+else{
+	get_template_part( 'template-parts/single/' . $single_style );
+}

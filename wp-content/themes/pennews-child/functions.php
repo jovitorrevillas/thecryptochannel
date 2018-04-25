@@ -3,7 +3,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'enqueue_site_script' );
 
 add_shortcode('about_sc','about_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
-add_shortcode('events_sc','events_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
+add_shortcode('events_sc','events_sc_handler');		//ADD SHORT CODE --EVENTS DISpLAy
 
 add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
 add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
@@ -235,7 +235,7 @@ function events_sc_handler($content,$tag){
 					<div style="display: inline-block;"></div> <div style="display: inline-block;"><b>|					</b></div> <div style="display: inline-block;">'.$add.'</div>
 					<div style="width: 100%;">
 						<p>
-							
+							'.get_the_content().'
 						</p>
 					</div>
 				'; ?>
