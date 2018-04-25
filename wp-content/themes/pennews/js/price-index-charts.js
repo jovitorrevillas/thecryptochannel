@@ -628,8 +628,8 @@ AmCharts.translations.export||(AmCharts.translations.export={}),AmCharts.transla
 var cccchart_type = 'line';
 (function() {
 var Currencies = ["USD","EUR","GBP","JPY","RUR"];
-var CurrenciesSymbols = {"USD":"$","EUR":"€","CNY":"¥","JPY":"¥","RUR":"₽"};
-var ExchangesByCurrency = {"USD":["Index","Bitfinex","GDAX","Bitstamp","Gemini","BitTrex","Kraken","HitBTC"],"EUR":["Index","Kraken","Bitstamp","GDAX","Gatecoin","Exmo","Quoine"],"GBP":["Index","Coinfloor","LakeBTC","GDAX","Localbitcoins","Kraken"],"CNY":["Index","OKCoin CNY","Huobi","Localbitcoins"],"JPY":["Index","Coincheck","Zaif","Quoine","LakeBTC"],"RUR":["Index","Livecoin","Exmo"]};
+var CurrenciesSymbols = GLOBAL_CURRENCY_SYMBOLS;
+var ExchangesByCurrency = GLOBAL_CURRENCY_EXCHANGES[GLOBAL_SYMBOL];
 
 var cccCurrentTheme = {
 General: {
@@ -2437,16 +2437,16 @@ cccUpdateChart();
 function setDates() {
     jQuery(".tabperiods").removeClass("tabperiods_active");
 
-    let timeStart = $.datepicker.formatDate("@", jQuery(".chart-filter__from").datepicker("getDate"));
-    let timeEnd = $.datepicker.formatDate("@", jQuery(".chart-filter__to").datepicker("getDate"));
+    let timeStart = jQuery.datepicker.formatDate("@", jQuery(".chart-filter__from").datepicker("getDate"));
+    let timeEnd = jQuery.datepicker.formatDate("@", jQuery(".chart-filter__to").datepicker("getDate"));
 
     if(timeStart > timeEnd) {
     jQuery(".chart-filter__from").datepicker("setDate", "-30d").blur();
     jQuery(".chart-filter__to").datepicker("setDate", timeStart).blur();
     }
     return {
-        from : $.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__from").datepicker("getDate")),
-        to   : $.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__to").datepicker("getDate")),
+        from : jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__from").datepicker("getDate")),
+        to   : jQuery.datepicker.formatDate("yy-mm-dd", jQuery(".chart-filter__to").datepicker("getDate")),
         numberOfDays : Math.abs((timeEnd - timeStart)/86400000)
     };
 }

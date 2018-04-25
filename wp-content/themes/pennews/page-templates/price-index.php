@@ -16,7 +16,14 @@ $symbol = $symbols[get_the_ID()];
 
 ?>
 <script type="text/javascript">
+	// CONFIG
 	var GLOBAL_SYMBOL = <?php echo "\"$symbol\""; ?>;
+	var GLOBAL_CURRENCY_SYMBOLS = {"USD":"$","EUR":"€","GBP":"£","JPY":"¥","RUR":"₽"};
+	var GLOBAL_CURRENCY_EXCHANGES = {
+		'BTC': {"USD":["Index","Bitfinex","GDAX","Bitstamp","Gemini","BitTrex","Kraken","HitBTC"],"EUR":["Index","Kraken","Bitstamp","GDAX","Gatecoin","Exmo","Quoine"],"GBP":["Index","Coinfloor","LakeBTC","GDAX","Localbitcoins","Kraken"],"CNY":["Index","OKCoin CNY","Huobi","Localbitcoins"],"JPY":["Index","Coincheck","Zaif","Quoine","LakeBTC"],"RUR":["Index","Livecoin","Exmo"]},
+		'BCH': {"USD":["Index","Bitfinex","BitTrex","HitBTC","Kraken","Poloniex"],"EUR":["Index","Kraken"],"GBP":["Index","Coinfloor"],"CNY":["Index","OKCoin CNY","Bter"],"JPY":["Index","Zaif","Quoine"],"RUR":["Index","Livecoin"]},
+		'ETH': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]}
+	};
 
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		var currency = "USD";
@@ -158,76 +165,82 @@ $symbol = $symbols[get_the_ID()];
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
 									<h1><?php echo get_the_title(); ?></h1>
-									<div class="price-index-summary-column col-md-9 col-sm-12">
-										<div class="row currency-selection">
-											<ul class="nav nav-pills">
-												<li class="currency-item active"><a>USD</a></li>
-												<li class="currency-item"><a>EUR</a></li>
-												<li class="currency-item"><a>GBP</a></li>
-												<li class="currency-item"><a>JPY</a></li>
-												<li class="currency-item"><a>RUR</a></li>
-											</ul>
+									<div class="col-md-8 no-padding">
+										<div class="price-index-summary-column col-md-12">
+											<div class="row currency-selection">
+												<ul class="nav nav-pills">
+													<li class="currency-item active"><a>USD</a></li>
+													<li class="currency-item"><a>EUR</a></li>
+													<li class="currency-item"><a>GBP</a></li>
+													<li class="currency-item"><a>JPY</a></li>
+													<li class="currency-item"><a>RUR</a></li>
+												</ul>
+											</div>
+											<div class="row other-summary">
+												<div class="col-md-4">
+													<h2 id="crypto_lastpriceH">-</h2>
+													<div class="main-summary">
+														<div class="highlight clearfix">
+															<label class="pull-left">DAY</label>
+															<span id="crypto_daily" class="pull-right">-</span>
+														</div>
+														<div class="highlight clearfix">
+															<label class="pull-left">WEEK</label>
+															<span id="crypto_weekly" class="pull-right">-</span>
+														</div>
+														<div class="highlight clearfix">
+															<label class="pull-left">MONTH</label>
+															<span id="crypto_monthly" class="pull-right">-</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="field clearfix">
+														<label class="pull-left">Open 24H</label>
+														<span id="crypto_open24h" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">High 24H</label>
+														<span id="crypto_high24h" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">Low 24H</label>
+														<span id="crypto_low24h" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">Last Price</label>
+														<span id="crypto_lastprice" class="pull-right">-</span>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="field clearfix">
+														<label class="pull-left">Total</label>
+														<span id="crypto_total" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">Mkt. Cap</label>
+														<span id="crypto_mktcap" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">Vol 24H</label>
+														<span id="crypto_vol24h" class="pull-right">-</span>
+													</div>
+													<div class="field clearfix">
+														<label class="pull-left">Vol.24H</label>
+														<span id="crypto_voldot24h" class="pull-right">-</span>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="row other-summary">
-											<div class="col-md-4">
-												<h2 id="crypto_lastpriceH">-</h2>
-												<div class="main-summary">
-													<div class="highlight clearfix">
-														<label class="pull-left">DAY</label>
-														<span id="crypto_daily" class="pull-right">-</span>
-													</div>
-													<div class="highlight clearfix">
-														<label class="pull-left">WEEK</label>
-														<span id="crypto_weekly" class="pull-right">-</span>
-													</div>
-													<div class="highlight clearfix">
-														<label class="pull-left">MONTH</label>
-														<span id="crypto_monthly" class="pull-right">-</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="field clearfix">
-													<label class="pull-left">Open 24H</label>
-													<span id="crypto_open24h" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">High 24H</label>
-													<span id="crypto_high24h" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">Low 24H</label>
-													<span id="crypto_low24h" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">Last Price</label>
-													<span id="crypto_lastprice" class="pull-right">-</span>
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="field clearfix">
-													<label class="pull-left">Total</label>
-													<span id="crypto_total" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">Mkt. Cap</label>
-													<span id="crypto_mktcap" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">Vol 24H</label>
-													<span id="crypto_vol24h" class="pull-right">-</span>
-												</div>
-												<div class="field clearfix">
-													<label class="pull-left">Vol.24H</label>
-													<span id="crypto_voldot24h" class="pull-right">-</span>
-												</div>
-											</div>
+										<div class="col-md-12 no-padding" id="coinchart">
+											<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-charts.js"></script>
+										</div>
+										<div class="col-md-12 no-padding" id="histoweek">
+											<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-history.js"></script>
 										</div>
 									</div>
-									<div class="col-md-3 col-sm-12">
-									</div>
-									<div class="col-md-9" id="coinchart">
-										<script type="text/javascript" src="/wp-content/themes/pennews/js/price-index-charts.js"></script>
+									<div class="col-md-4 no-padding">
+
 									</div>
 								</div>
 							</div>
