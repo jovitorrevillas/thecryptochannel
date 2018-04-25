@@ -258,7 +258,7 @@ $sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
 
 										<!-- RECENT NEWS -->
 										<div class="col-md-12 no-padding" id="sidebar-price-index">
-											<div class="row related-price-news">
+											<div class="related-price-news">
 												<h1><?php echo $sidebar_news_title; ?></h1>
 											</div>
 										</div>
