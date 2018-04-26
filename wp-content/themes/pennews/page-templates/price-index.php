@@ -21,8 +21,6 @@ $symbols = array(
 		'symbol' => 'ETH',
 		'sidebar_news_title' => 'Ethereum Price News',
 		'post_tag' => 'ethereum-price'
-<<<<<<< HEAD
-=======
 	),
 	1907 => array(
 		'symbol' => 'LTC',
@@ -38,7 +36,6 @@ $symbols = array(
 		'symbol' => 'XMR',
 		'sidebar_news_title' => 'Monero Price News',
 		'post_tag' => 'monero-price'
->>>>>>> f663c214dba0a8f21daef1cab75f05d79065a6e5
 	),
 );
 
