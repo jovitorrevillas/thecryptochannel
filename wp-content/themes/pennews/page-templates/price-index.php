@@ -295,7 +295,7 @@ $currenciesRaw = $symbols[get_the_ID()]['currencies'];
 									</div>
 									<div class="col-md-4">
 										<div class="col-md-12 no-padding cryptocurrency-converter">
-											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="<?php echo "\"$symbol\""; ?>" src="/wp-content/themes/pennews/js/price-index-converter.js"></script>
+											<script type="text/javascript" data-ct-converter-currencies="USD,EUR,GBP,JPY,RUR" data-ct-converter-coins="<?php echo "$symbol"; ?>" src="/wp-content/themes/pennews/js/price-index-converter.js"></script>
 										</div>
 
 										<!-- RECENT NEWS -->
