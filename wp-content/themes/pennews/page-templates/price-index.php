@@ -212,8 +212,9 @@ $currenciesRaw = $symbols[get_the_ID()]['currencies'];
 												<ul class="nav nav-pills">
 													<?php
 														foreach($currenciesRaw as $c) {
+															$a = ($c === 'USD') ? 'active' : '';
 														?>
-															<li class="currency-item"><a><?=$c ?></a></li>
+															<li class="currency-item <?=$a ?>"><a><?=$c ?></a></li>
 														<?php
 														}
 													?>
