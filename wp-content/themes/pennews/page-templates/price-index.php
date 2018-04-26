@@ -9,31 +9,37 @@ get_header();
 $symbols = array(
 	811 => array(
 		'symbol' => 'BTC',
+		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
 		'sidebar_news_title' => 'Bitcoin Price News',
 		'post_tag' => 'bitcoin-price'
 	),
 	817 => array(
 		'symbol' => 'BCH',
+		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
 		'sidebar_news_title' => 'Bitcoin Cash Price News',
 		'post_tag' => 'bitcoin-cash'
 	),
 	821 => array(
 		'symbol' => 'ETH',
+		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
 		'sidebar_news_title' => 'Ethereum Price News',
 		'post_tag' => 'ethereum-price'
 	),
 	1907 => array(
 		'symbol' => 'LTC',
+		'currencies' => implode(',', ['USD','EUR']),
 		'sidebar_news_title' => 'Litecoin Price News',
 		'post_tag' => 'litecoin'
 	),
 	1909 => array(
 		'symbol' => 'XRP',
+		'currencies' => implode(',', ['USD','EUR']),
 		'sidebar_news_title' => 'Ripple Price News',
 		'post_tag' => 'ripple'
 	),
 	1911 => array(
 		'symbol' => 'XMR',
+		'currencies' => implode(',', ['USD','EUR']),
 		'sidebar_news_title' => 'Monero Price News',
 		'post_tag' => 'monero'
 	),
@@ -42,11 +48,13 @@ $symbols = array(
 $symbol = $symbols[get_the_ID()]['symbol'];
 $sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
 $post_tag = $symbols[get_the_ID()]['post_tag'];
+$currencies = $symbols[get_the_ID()]['currencies'];
 
 ?>
 <script type="text/javascript">
 	// CONFIG
 	var GLOBAL_SYMBOL = <?php echo "\"$symbol\""; ?>;
+	var GLOBAL_CURRENCIES = <?php echo "\"$currencies\""; ?>;
 	var GLOBAL_CURRENCY_SYMBOLS = {"USD":"$","EUR":"€","GBP":"£","JPY":"¥","RUR":"₽"};
 	var GLOBAL_CURRENCY_EXCHANGES = {
 		'BTC': {"USD":["Index","Bitfinex","GDAX","Bitstamp","Gemini","BitTrex","Kraken","HitBTC"],"EUR":["Index","Kraken","Bitstamp","GDAX","Gatecoin","Exmo","Quoine"],"GBP":["Index","Coinfloor","LakeBTC","GDAX","Localbitcoins","Kraken"],"CNY":["Index","OKCoin CNY","Huobi","Localbitcoins"],"JPY":["Index","Coincheck","Zaif","Quoine","LakeBTC"],"RUR":["Index","Livecoin","Exmo"]},
@@ -57,6 +65,7 @@ $post_tag = $symbols[get_the_ID()]['post_tag'];
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		var currency = "USD";
 		var symbol = GLOBAL_SYMBOL;
+		var currencies = GLOBAL_CURRENCIES;
 
 		function resetSummaryDetails() {
 			var data = {
@@ -126,7 +135,7 @@ $post_tag = $symbols[get_the_ID()]['post_tag'];
 		}
 
 		function updateOriginPrices() {
-			var url = 'https://api.cointrend.club/data/priceHistory?fsym=' + symbol + '&tsyms=USD,EUR,GBP,JPY,RUR';
+			var url = 'https://api.cointrend.club/data/priceHistory?fsym=' + symbol + '&tsyms=' + currencies;
 			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 			xhr.open('get', url, true);
@@ -144,7 +153,7 @@ $post_tag = $symbols[get_the_ID()]['post_tag'];
 		}
 
 		function updateSummary(originPrices) {
-			var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=USD,EUR,GBP,JPY,RUR";
+			var url = "https://api.cointrend.club/data/pricemultifull?fsyms=" + symbol + "&tsyms=" + currencies;
 			var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 			xhr.open('get', url, true);
