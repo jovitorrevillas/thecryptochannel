@@ -93,3 +93,20 @@ git add .
 git commit -m "4/25 10:14"
 git push origin master
 exit
+git status
+git pull origin master
+git add .
+git commit -m "Merge"
+git pull origin master
+git push origin master
+git pull origin master
+git status
+git rm wp-content/themes/pennews-child/get_custom_single_template.php 
+git status
+git rm wp-content/themes/pennews-child/single-bitcoin101.php 
+git add .
+git status
+git commit -m "merge"
+git pull origin master
+git push origin master
+git status

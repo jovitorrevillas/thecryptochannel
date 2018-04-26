@@ -24,7 +24,7 @@ if ( is_active_sidebar( 'footer-signup-form' ) ){
 }
 ?>
 <?php penci_render_google_adsense( 'penci_general_ad_above_footer' );
-if(!is_single()) : ?>
+if(!is_single()||is_singular('cryptopedia')) : ?>
 	<footer id="colophon" class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
 		<?php clean_custom_menu("menu-2"); ?>
 
