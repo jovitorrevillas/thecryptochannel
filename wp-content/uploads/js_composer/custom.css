@@ -1,9 +1,20 @@
 /*PJ styles*/
-hr{
-    height: 2px;
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-tab.vc_active>a{
+   border-bottom: 3px solid #ffcd04;
+}
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat a{
+   font-size: 18px;
+   background-color: white;
+}
+.wpb_text_column h1, .wpb_text_column h2, .wpb_text_column h3, .wpb_text_column h4, .wpb_text_column h5, .wpb_text_column h6, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .comment-content h1, .comment-content h2, .comment-content h3, .comment-content h4, .comment-content h5, .comment-content h6{
+    margin-bottom:0;
+}
+.vc_custom_1524650269254{
+    padding-top:0;
+}
+.separator{
     width: 50px;
-    background: #ffcd04;
-    float: left;
+    height: 4px;
 }
 .wpb_text_column{
     background: transparent;
@@ -30,4 +41,10 @@ button, .button, .entry-content a.button{
 }
 ul li{
     list-style-type: circle;
+}
+
+@media all and (max-width: 480px){
+    .penci_media_object .penci_mobj__img{
+        width: 92.5%;
+    }
 }

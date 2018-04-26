@@ -1,9 +1,10 @@
 <?php
+//Disable AdminBar
+show_admin_bar(false);
+
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'enqueue_site_script' );
 
-add_shortcode('about_sc','about_sc_handler');		//ADD SHORT CODE --ABOUT CARDS
-add_shortcode('events_sc','events_sc_handler');		//ADD SHORT CODE --EVENTS DISpLAy
 
 add_action( 'add_meta_boxes', 'add_links_meta_box' ); //ADD CUSTOM META BOX --ABOUT LINKS
 add_action( 'save_post', 'links_meta_box_save' );	// SAVE CUSTOM META BOX DATA --ABOUT LINKS
@@ -94,162 +95,32 @@ function clean_custom_menu( $theme_location ) {
 
 
 
-function about_sc_handler($content,$tag){  
-
-    $params = array(
-        'post_type'   => 'people',
-        'tax_query'   => array(
-            array(
-                'taxonomy' => 'people_tax',
-                'field'    => 'slug',
-                'terms'    => $tag
-            )
-        )
-    );
+function concat_date($from,$to){
+				$time = "";
 	
-    $people = new WP_Query($params);
-	//printf( '<pre>%s</pre>', var_export( get_post_custom(), true ) );
-    if( $people->have_posts() ) :
-
-
-        $tempo = '
-		<div style="width:auto;  display: flex; flex-wrap:wrap; margin: 0 auto;">';
-
-            while( $people->have_posts() ) :
-                $people->the_post();
-				$f = get_post_meta(get_the_ID(),'fb_meta_box',true);
-				$t = get_post_meta(get_the_ID(),'tw_meta_box',true);
-			    $l = get_post_meta(get_the_ID(),'li_meta_box',true);
+				$f = explode("/",$from);
+				$t = explode("/",$to);
+	
+				$time = date("F d, Y", mktime(0, 0, 0, $f[0], $f[1], $f[2]));
 				
-				$fb = (empty($f) ? '' : '<a href="http://wwww.facebook.com/'.$f.'"><i class="fa fa-facebook"></i></a>  ' );
-				$tw = (empty($t) ? '' : '<a href="http://wwww.twitter.com/'.$t.'"><i class="fa fa-twitter"></i></a>  ' );
-				$li = (empty($l) ? '' : '<a href="http://wwww.linkedin.com/in/'.$l.'"><i class="fa fa-linkedin"></i></a>  ' );
-	
-                $tempo .= '
-				<div style="
-				min-width: 345px;
-                display: inline-block;
-                border: 1px solid whitesmoke;
-                width: 31.3333333%;
-                border-radius: 7px;
-                background-color: white;
-                height: auto;
-                margin-top: 15px;
-				margin-right: 15px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                ">
-                   
-                   <div>
-                        <img style="
-                        width: auto;
-                        border-top-left-radius: 7px;
-                        border-top-right-radius: 7px;"
-                             src="'. get_the_post_thumbnail_url().'">
-                    </div>
-                
-                    <div  style="
-                    padding: 10px 15px;
-                    width: 50%;
-                    display: inline-block;">
-                        <a href="#"> '.get_the_title().'</a>
-                    </div>
-                   
-                    <div align="right"  style="
-                    padding: 10px 15px;
-                    width: 30%;
-                    float: right;
-                    display: inline-block;">
-                        '.$fb.$tw.$li.'
-                    </div>
-
-                </div>
-				'; ?>
-
-            <?php
-            endwhile;
-            wp_reset_postdata();
-
-        $tempo .= '</div>';
-
-    else :
-        $tempo = esc_html_e( 'No members found yet!', 'text-domain' );
-    endif;
-    return $tempo;
-}
-
-function events_sc_handler($content,$tag){  
-
-    $params = array(
-        'post_type'   => 'events',
-        'tax_query'   => array(
-            array(
-                'taxonomy' => 'etype_tax',
-                'field'    => 'slug',
-                'terms'    => $tag
-            )
-        )
-    );
-	
-	print_r($tag);
-	
-    $events = new WP_Query($params);
-    if( $events->have_posts() ) :
-
-
-        $tempo = '
-		<div style="width:100%;padding:5px;">';
-
-            while( $events->have_posts() ) :
-                $events->the_post();
-// 				$eurl = (filter_var(get_post_meta(get_the_ID(),'event_url_mb',true),FILTER_VALIDATE_URL) 
-// 						 ? get_post_meta(get_the_ID(),'event_url_mb',true) : 'You entered an invalid URL!') ;
-	
-				$from = get_post_meta(get_the_ID(),'from_date_mb',true);
-			    $to = get_post_meta(get_the_ID(),'to_date_mb',true);
-				$add = get_post_meta(get_the_ID(),'event_address_mb',true);
-				
-				
-// 				$f = explode("/",$from);
-// 				$t = explode("/",$to);
-
 // 				$yearf = DateTime::createFromFormat('y', $f[2]);
 // 				$yeart = DateTime::createFromFormat('y', $t[2]);
-
-// 				$time = "";
-
-
+// 				$time = $yearf->format('Y');
 // 				if($f[0] == $t[0] && $f[2] == $t[2]){
 
 // 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
 // 						." ".$f[1]."-".$t[1].", ".$yearf->format('Y')
 // 						;
-// 				}else{
+// 				}
+// 	else{
 // 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
 // 						." ".$f[1].", ".$yearf->format('Y')." - ".date('F', mktime(0, 0, 0, $t[0], 10))
 // 						." ".$t[1].", ".$yeart->format('Y')
 // 						;
 // 				}
-
-                $tempo .= '
-					<div><a href="#"><h2>'.get_the_title().'</h2></a></div>
-					<div style="display: inline-block;"></div> <div style="display: inline-block;"><b>|					</b></div> <div style="display: inline-block;">'.$add.'</div>
-					<div style="width: 100%;">
-						<p>
-							'.get_the_content().'
-						</p>
-					</div>
-				'; ?>
-
-            <?php
-            endwhile;
-            wp_reset_postdata();
-
-        $tempo .= '</div>';
-
-    else :
-        $tempo = esc_html_e( 'No events were set.', 'text-domain' );
-    endif;
-    return $tempo;
+		
+	return $time;
+	
 }
 
 
@@ -376,7 +247,7 @@ function events_meta_box_save( $post_id )
       
 }
 
-function my_theme_scripts() {
+function cryptopedia_scripts() {
 	if(is_page(483)) {
 	    wp_enqueue_style( 'bootstrap-datetimepicker-css', '//rawcdn.githack.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css');
 		wp_enqueue_script( 'ckeditor', '//cdn.ckeditor.com/4.9.2/full/ckeditor.js');
@@ -386,6 +257,18 @@ function my_theme_scripts() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'cryptopedia_scripts' );
 
+
+function add_sidebar_scripts(){
+	
+	if(is_singular('cryptopedia')){
+		wp_enqueue_script('scrollspy', get_template_directory_uri() . '/js/scrollspy.js');
+		wp_enqueue_script('sidebar', get_template_directory_uri() . '/js/sidebar.js', array('jquery'), 1, true);
+		wp_enqueue_style( 'sidebar-widget-style', get_stylesheet_directory_uri() . '/sidebar.css');
+
+	}
+}
+
+add_action('wp_enqueue_scripts', 'add_sidebar_scripts');
 

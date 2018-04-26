@@ -13,11 +13,11 @@ if( $use_option_current ) {
 }
 
 $single_style = $single_style ? $single_style : 'style-1';
-
-echo $post->post_type;
 if ($post->post_type == 'cryptopedia') {
-	get_template_part( '-child/single-bitcoin101.php');
+	if(preg_match("/explained/i", $_SERVER['REQUEST_URI']))
+		$single_style = 'single-explained';
+	else
+		$single_style = 'single-bitcoin101';
 }
-else{
-	get_template_part( 'template-parts/single/' . $single_style );
-}
+
+get_template_part( 'template-parts/single/' . $single_style );

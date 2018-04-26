@@ -1,13 +1,13 @@
 jQuery(document).ready(function($){
 
-	let postTitleSideContainer = $("<div></div>", {text: $(".entry-title.penci-entry-title.penci-title-left").first().text(), class: 'post-title-sidebar'});
+	let postTitleSideContainer = $("<div></div>", {text: $(".entry-title.penci-entry-title").first().text(), class: 'post-title-sidebar'});
 
 	let widgetContents = $("div.textwidget.custom-html-widget").prepend(postTitleSideContainer);
 	// widgetContents.hide();
 
 
-	$("h4.widget-title").css('cursor', 'pointer');
-	$(".widget-title.penci-block__title").click(function(){
+	$("h4.penci-block__title").css('cursor', 'pointer');
+	$("h4.penci-block__title").click(function(){
 		widgetContents.slideToggle();
 	});
 
