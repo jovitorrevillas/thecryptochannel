@@ -627,9 +627,15 @@ AmCharts.translations.export||(AmCharts.translations.export={}),AmCharts.transla
 
 var cccchart_type = 'line';
 (function() {
-var Currencies = ["USD","EUR","GBP","JPY","RUR"];
-var CurrenciesSymbols = GLOBAL_CURRENCY_SYMBOLS;
+
 var ExchangesByCurrency = GLOBAL_CURRENCY_EXCHANGES[GLOBAL_SYMBOL];
+var Currencies = ["USD","EUR","GBP","JPY","RUR"];
+
+Currencies = Currencies.filter((cur) => {
+	return if(ExchangesByCurrency.hasOwnProperty(cur));
+});
+
+var CurrenciesSymbols = GLOBAL_CURRENCY_SYMBOLS;
 
 var cccCurrentTheme = {
 General: {
