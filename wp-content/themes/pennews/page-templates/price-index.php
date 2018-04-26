@@ -9,20 +9,39 @@ get_header();
 $symbols = array(
 	811 => array(
 		'symbol' => 'BTC',
-		'sidebar_news_title' => 'Bitcoin Price News'
+		'sidebar_news_title' => 'Bitcoin Price News',
+		'post_tag' => 'bitcoin-price'
 	),
 	817 => array(
 		'symbol' => 'BCH',
-		'sidebar_news_title' => 'Bitcoin Cash Price News'
+		'sidebar_news_title' => 'Bitcoin Cash Price News',
+		'post_tag' => 'bitcoin-cash'
 	),
 	821 => array(
 		'symbol' => 'ETH',
-		'sidebar_news_title' => 'Etherium Price News'
+		'sidebar_news_title' => 'Ethereum Price News',
+		'post_tag' => 'ethereum-price'
+	),
+	1907 => array(
+		'symbol' => 'LTC',
+		'sidebar_news_title' => 'Litecoin Price News',
+		'post_tag' => 'litecoin-price'
+	),
+	1909 => array(
+		'symbol' => 'XRP',
+		'sidebar_news_title' => 'Ripple Price News',
+		'post_tag' => 'ripple-price'
+	),
+	1911 => array(
+		'symbol' => 'XMR',
+		'sidebar_news_title' => 'Monero Price News',
+		'post_tag' => 'monero-price'
 	),
 );
 
 $symbol = $symbols[get_the_ID()]['symbol'];
 $sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
+$post_tag = $symbols[get_the_ID()]['post_tag'];
 
 ?>
 <script type="text/javascript">
@@ -260,6 +279,48 @@ $sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
 										<div class="col-md-12 no-padding" id="sidebar-price-index">
 											<div class="related-price-news">
 												<h1><?php echo $sidebar_news_title; ?></h1>
+											</div>
+											<div class="price-index-news-list">
+												<?php												
+												$args = array(
+								                    'post_type' => 'post',
+								                    'tag' => $post_tag,
+								                    'orderby' => 'date',
+								                    'order' => 'DESC',
+													'posts_per_page' => 3
+								                );
+												$news = new WP_Query( $args );
+												
+												if ( $news->have_posts() ) :
+													while ( $news->have_posts() ) : $news->the_post();
+														$count = (int) get_post_meta( get_the_ID(), '_count-views_all', true );
+														?>
+														<div class="related-news-item">
+															<a href="<?=get_permalink(); ?>"><?=the_post_thumbnail( 'medium_large' ); ?></a>
+															<div class="details">
+																<div class="col-md-6">
+																	<?php echo get_the_date( 'M d, Y' ); ?>
+																</div>
+																<div class="col-md-6">
+																	By <strong><?php echo get_the_author_link(); ?></p></strong>
+																</div>
+															</div>
+															<a class="rn-item-title" href="<?=get_permalink() ?>"><?=get_the_title(); ?></a>
+															<div class="stats">
+																<i class="fa fa-eye"></i>
+																<span><?=$count ?></span>
+																
+																<i class="fa fa-share"></i>
+																<span><?=0 ?></span>
+															</div>
+														</div>
+														<?php
+													endwhile;
+												endif;
+												
+												wp_reset_postdata();
+												?>
+											</div>
 											</div>
 										</div>
 										<!-- END RECENT NEWS -->
