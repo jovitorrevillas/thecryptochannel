@@ -60,7 +60,10 @@ $currenciesRaw = $symbols[get_the_ID()]['currencies'];
 	var GLOBAL_CURRENCY_EXCHANGES = {
 		'BTC': {"USD":["Index","Bitfinex","GDAX","Bitstamp","Gemini","BitTrex","Kraken","HitBTC"],"EUR":["Index","Kraken","Bitstamp","GDAX","Gatecoin","Exmo","Quoine"],"GBP":["Index","Coinfloor","LakeBTC","GDAX","Localbitcoins","Kraken"],"CNY":["Index","OKCoin CNY","Huobi","Localbitcoins"],"JPY":["Index","Coincheck","Zaif","Quoine","LakeBTC"],"RUR":["Index","Livecoin","Exmo"]},
 		'BCH': {"USD":["Index","Bitfinex","BitTrex","HitBTC","Kraken","Poloniex"],"EUR":["Index","Kraken"],"GBP":["Index","Coinfloor"],"CNY":["Index","OKCoin CNY","Bter"],"JPY":["Index","Zaif","Quoine"],"RUR":["Index","Livecoin"]},
-		'ETH': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]}
+		'ETH': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]},
+		'LTC': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]},
+		'XRP': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]},
+		'XMR': {"USD":["Index","Bitfinex","HitBTC","GDAX","Kraken","Gemini","Poloniex"],"EUR":["Index","GDAX","Bitstamp","Kraken","Gatecoin","Exmo","HitBTC"],"GBP":["Index","Kraken"],"CNY":["Index","OKCoin CNY"],"JPY":["Index","Quoine","Kraken"],"RUR":["Index","YoBit","Exmo","Livecoin"]},
 	};
 
 	document.addEventListener("DOMContentLoaded", function(event) { 
