@@ -25,17 +25,17 @@ $symbols = array(
 	1907 => array(
 		'symbol' => 'LTC',
 		'sidebar_news_title' => 'Litecoin Price News',
-		'post_tag' => 'litecoin-price'
+		'post_tag' => 'litecoin'
 	),
 	1909 => array(
 		'symbol' => 'XRP',
 		'sidebar_news_title' => 'Ripple Price News',
-		'post_tag' => 'ripple-price'
+		'post_tag' => 'ripple'
 	),
 	1911 => array(
 		'symbol' => 'XMR',
 		'sidebar_news_title' => 'Monero Price News',
-		'post_tag' => 'monero-price'
+		'post_tag' => 'monero'
 	),
 );
 
