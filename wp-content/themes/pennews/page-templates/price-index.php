@@ -9,37 +9,37 @@ get_header();
 $symbols = array(
 	811 => array(
 		'symbol' => 'BTC',
-		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
+		'currencies' => ['USD','EUR','GBP','JPY','RUR'],
 		'sidebar_news_title' => 'Bitcoin Price News',
 		'post_tag' => 'bitcoin-price'
 	),
 	817 => array(
 		'symbol' => 'BCH',
-		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
+		'currencies' => ['USD','EUR','GBP','JPY','RUR'],
 		'sidebar_news_title' => 'Bitcoin Cash Price News',
 		'post_tag' => 'bitcoin-cash'
 	),
 	821 => array(
 		'symbol' => 'ETH',
-		'currencies' => implode(',', ['USD','EUR','GBP','JPY','RUR']),
+		'currencies' => ['USD','EUR','GBP','JPY','RUR'],
 		'sidebar_news_title' => 'Ethereum Price News',
 		'post_tag' => 'ethereum-price'
 	),
 	1907 => array(
 		'symbol' => 'LTC',
-		'currencies' => implode(',', ['USD','EUR']),
+		'currencies' => ['USD','EUR'],
 		'sidebar_news_title' => 'Litecoin Price News',
 		'post_tag' => 'litecoin'
 	),
 	1909 => array(
 		'symbol' => 'XRP',
-		'currencies' => implode(',', ['USD','EUR']),
+		'currencies' => ['USD','EUR'],
 		'sidebar_news_title' => 'Ripple Price News',
 		'post_tag' => 'ripple'
 	),
 	1911 => array(
 		'symbol' => 'XMR',
-		'currencies' => implode(',', ['USD','EUR']),
+		'currencies' => ['USD','EUR'],
 		'sidebar_news_title' => 'Monero Price News',
 		'post_tag' => 'monero'
 	),
@@ -48,7 +48,8 @@ $symbols = array(
 $symbol = $symbols[get_the_ID()]['symbol'];
 $sidebar_news_title = $symbols[get_the_ID()]['sidebar_news_title'];
 $post_tag = $symbols[get_the_ID()]['post_tag'];
-$currencies = $symbols[get_the_ID()]['currencies'];
+$currencies = implode(',', $symbols[get_the_ID()]['currencies']);
+$currenciesRaw = $symbols[get_the_ID()]['currencies'];
 
 ?>
 <script type="text/javascript">
@@ -209,11 +210,13 @@ $currencies = $symbols[get_the_ID()]['currencies'];
 										<div class="price-index-summary-column col-md-12">
 											<div class="row currency-selection">
 												<ul class="nav nav-pills">
-													<li class="currency-item active"><a>USD</a></li>
-													<li class="currency-item"><a>EUR</a></li>
-													<li class="currency-item"><a>GBP</a></li>
-													<li class="currency-item"><a>JPY</a></li>
-													<li class="currency-item"><a>RUR</a></li>
+													<?php
+														foreach($currenciesRaw as $c) {
+														?>
+															<li class="currency-item"><a><?=$c ?></a></li>
+														<?php
+														}
+													?>
 												</ul>
 											</div>
 											<div class="row other-summary">
