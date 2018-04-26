@@ -632,7 +632,7 @@ var ExchangesByCurrency = GLOBAL_CURRENCY_EXCHANGES[GLOBAL_SYMBOL];
 var Currencies = ["USD","EUR","GBP","JPY","RUR"];
 
 Currencies = Currencies.filter((cur) => {
-	return if(ExchangesByCurrency.hasOwnProperty(cur));
+	return ExchangesByCurrency.hasOwnProperty(cur);
 });
 
 var CurrenciesSymbols = GLOBAL_CURRENCY_SYMBOLS;
