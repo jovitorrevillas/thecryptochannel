@@ -95,36 +95,6 @@ function clean_custom_menu( $theme_location ) {
 
 
 
-function concat_date($from,$to){
-				$time = "";
-	
-				$f = explode("/",$from);
-				$t = explode("/",$to);
-	
-				$time = date("F d, Y", mktime(0, 0, 0, $f[0], $f[1], $f[2]));
-				
-// 				$yearf = DateTime::createFromFormat('y', $f[2]);
-// 				$yeart = DateTime::createFromFormat('y', $t[2]);
-// 				$time = $yearf->format('Y');
-// 				if($f[0] == $t[0] && $f[2] == $t[2]){
-
-// 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
-// 						." ".$f[1]."-".$t[1].", ".$yearf->format('Y')
-// 						;
-// 				}
-// 	else{
-// 					$time = date('F', mktime(0, 0, 0, $f[0], 10))
-// 						." ".$f[1].", ".$yearf->format('Y')." - ".date('F', mktime(0, 0, 0, $t[0], 10))
-// 						." ".$t[1].", ".$yeart->format('Y')
-// 						;
-// 				}
-		
-	return $time;
-	
-}
-
-
-
 //CREATE CUSTOM METABOXES --ABOUT
 
 function add_links_meta_box(){
@@ -137,9 +107,13 @@ function html_links_metabox(){
     $fb_text = isset( $values['fb_meta_box'] ) ? esc_attr($values['fb_meta_box'][0]) : '';
 	$tw_text = isset( $values['tw_meta_box'] ) ?  esc_attr($values['tw_meta_box'][0]) : '';
 	$li_text = isset( $values['li_meta_box'] ) ?  esc_attr($values['li_meta_box'][0]) : '';
-    
+    $pos_text = isset( $values['pos_meta_box'] ) ?  esc_attr($values['pos_meta_box'][0]) : '';
+	
 	wp_nonce_field( 'sm_links_nonce', 'meta_box_nonce' );
 	?>
+<label for="pos_meta_box">Position (<i>For management team members only</i>)</label><br>
+    <input type="text" name="pos_meta_box" id="pos_meta_box" value="<?=$pos_text?>" /><br><br>
+
 <label for="fb_meta_box">Facebook (<i>Username only</i>)</label><br>
     <input type="text" name="fb_meta_box" id="fb_meta_box" value="<?=$fb_text?>" />
 <br><br>
@@ -169,7 +143,10 @@ function links_meta_box_save( $post_id )
     );
 	
 	// Make sure your data is set before trying to save it
-    if( array_key_exists('fb_meta_box', $_POST) )
+    if( array_key_exists('pos_meta_box', $_POST) )
+        update_post_meta( $post_id, 'pos_meta_box', wp_kses( $_POST['pos_meta_box'], $allowed ) );
+	
+	if( array_key_exists('fb_meta_box', $_POST) )
         update_post_meta( $post_id, 'fb_meta_box', wp_kses( $_POST['fb_meta_box'], $allowed ) );
 
 	
@@ -250,9 +227,11 @@ function events_meta_box_save( $post_id )
 function cryptopedia_scripts() {
 	if(is_page(483)) {
 	    wp_enqueue_style( 'bootstrap-datetimepicker-css', '//rawcdn.githack.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css');
+		wp_enqueue_style('bootstrap-datetimepicker', '//rawcdn.githack.com/smalot/bootstrap-datetimepicker/master/css/bootstrap-datetimepicker.min.css');
 		wp_enqueue_script( 'ckeditor', '//cdn.ckeditor.com/4.9.2/full/ckeditor.js');
 		wp_enqueue_script( 'moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js');
 		wp_enqueue_script( 'bootstrap-datetimepicker-js', '//rawcdn.githack.com/AuspeXeu/bootstrap-datetimepicker/master/js/bootstrap-datetimepicker.min.js');
+	    wp_enqueue_style( 'bootstrap-glyphicon', '//rawcdn.githack.com/wcoder/bootstrap-glyphicons/master/css/glyphicons.css');
 	}
 
 }

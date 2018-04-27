@@ -1,0 +1,39 @@
+��Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:1193;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-24 08:19:56";s:13:"post_date_gmt";s:19:"2018-04-24 08:19:56";s:12:"post_content";s:7029:"<img class="img-responsive" src="https://cointelegraph.com/storage/uploads/view/0a23aeb07c877286bac500ef3cf7dc2a.jpg" alt="Bitcoin mining process, a pick and Bitcoins" />
+<div class="text">
+<h2>What is Mining<a id="what-is-mining" name="what-is-mining"></a></h2>
+<p dir="ltr">There are three primary ways of obtaining Bitcoins: buying them on an exchange, accepting them for goods and services and mining new ones. Mining is a process of adding transaction records to the Bitcoin’s public ledger called the Blockchain. It exists so that every transaction can be confirmed, and every single user of the network can access this ledger. It is also used to distinguish legitimate Bitcoin transactions from attempts of re-spending money that has already been spent somewhere else.</p>
+
+<blockquote>
+<p dir="ltr"><a href="https://en.bitcoinwiki.org/wiki/Mining" target="_blank" rel="nofollow noopener"><strong>Mining</strong></a> — a process of record-keeping, done through the use of computer processing power.</p>
+<p dir="ltr"><a href="https://en.bitcoinwiki.org/wiki/Blockchain" target="_blank" rel="nofollow noopener"><strong>Blockchain</strong></a> — a public distributed ledger where records of every Bitcoin transaction are held.</p>
+</blockquote>
+<div class="embed-responsive embed-responsive-16by9"></div>
+</div>
+<iframe src="https://www.youtube.com/embed/GmOzih6I1zs" width="740" height="416" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<p dir="ltr">The Blockchain is so called because it is literarily a chain of blocks, which are lists of transactions made during a set period of time. When a block of transactions is generated, miners put it through a process. They apply a complex mathematical formula to the information in the block, subsequently turning it into a far shorter, seemingly random sequence of letters and numbers called a ‘hash’.</p>
+
+<blockquote>
+<p dir="ltr"><a href="https://en.bitcoinwiki.org/wiki/Hash" target="_blank" rel="nofollow noopener"><strong>Hash</strong></a> — a fixed-length unique sequence of random digits, which can be created from data of any size.</p>
+</blockquote>
+<p dir="ltr">A hash doesn’t only consist of information from the block of transactions, some other pieces of data are used too. Most importantly, the hash of the previous block stored in the Blockchain is included.</p>
+<p dir="ltr">While it’s relatively easy to produce a hash from a collection of data like a block of transactions, it’s practically impossible to know what data was used just by looking at the hash sequence. Moreover, each and every hash is unique, and changing just one character in a Bitcoin block completely changes the hash sequence.</p>
+<p dir="ltr"><img title="Hash md5, a table with examples of inputs and outputs" src="https://cointelegraph.com/storage/uploads/view/a04e13884a4211a212a504828f982baa.jpg" alt="Hash md5, a table with examples of inputs and outputs" /></p>
+<p dir="ltr">As you can see in the example above, no matter how much data is used as input, the hash will always stay the same length.</p>
+<p dir="ltr">Because of these attributes, hash works as a digital wax seal. If someone tampers with just one block of transactions its hash will immediately change, and so will all the following hash sequences in the Blockchain. Thus, every attempt at fraud within the Bitcoin network will be easily spotted by everyone using it.</p>
+<p dir="ltr"><img title="Hash md5 works as a digital wax seal" src="https://cointelegraph.com/storage/uploads/view/cd3acfe518f132f97d4abae7d43e99f8.jpg" alt="Hash md5 works as a digital wax seal" /></p>
+
+<h3 dir="ltr">Rewards<a id="rewards" name="rewards"></a></h3>
+<p dir="ltr">Essentially, miners are serving the Bitcoin community by confirming every transaction and making sure that every single one of them is legitimate. They all compete with one another, using software written specifically to mine blocks. Every time a new block is ‘sealed off’, meaning that a miner has successfully created a correct hash sequence, he or she gets a reward.</p>
+<p dir="ltr">As of October 2017, the bounty stands at 12.5 Bitcoins per block, and this value will decrease by half every 210,000 blocks. The overall number of Bitcoins is limited, so the more coins are mined, the more valuable each of them becomes. Thus, even though the amount of Bitcoins per block will inevitably decrease, the value of miners’ rewards will most likely stay the same or even rise.</p>
+<p dir="ltr">Normally, it would be extremely easy to produce a hash from a collection of information, computers are really good at this. Hence why, to prevent users from hashing thousands of transaction blocks each second and mining all of the available Bitcoins within minutes, the Bitcoin network has to deliberately make the process more difficult.</p>
+
+<h3 dir="ltr">Complications<a id="complications" name="complications"></a></h3>
+This is done via a required ‘Proof of Work’. It is a system that requires some work from the service requester, usually meaning processing time by a computer. Producing a proof of work is a random process with low probability, so normally a lot of trial and error is required for a valid proof of work to be generated. When it comes to Bitcoins, hash is what serves as a proof of work.
+<blockquote><a href="https://en.bitcoinwiki.org/wiki/Proof-of-work" target="_blank" rel="nofollow noopener"><strong>Proof of Work</strong></a> — an economic measure used to ensure against fraudulent activities by requiring some work from the service requester, usually meaning processing time by a computer.</blockquote>
+To complicate mining even further, something called the Bitcoin Difficulty is implemented in the process. It is a measure of how difficult it is to find a new block compared to the easiest it can ever be.
+<blockquote><a href="https://en.bitcoinwiki.org/wiki/Difficulty" target="_blank" rel="nofollow noopener"><strong>Bitcoin Difficulty</strong></a> — a measure of how difficult it is to generate a correct hash.</blockquote>
+This measure is recalculated every 2016 blocks. It is designed so that mining one block will take approximately 10 minutes. As more miners join in, the rate of block generation inevitably goes up. Then, after the difficulty level is recalculated, it rises in order to compensate and bring the rate of block creating back down. Any block released by fraudulent miners that does not meet the required difficulty level will be rejected by everyone on the network, thus becoming worthless.
+
+So, this process requires exertion and through it new currency slowly becomes available. The rate at which new coins appear resembles the rate at which commodities like gold are mined from the ground. Hence why the process is called ‘mining’.
+
+<img title="Scheme of how blockchain technology works" src="https://cointelegraph.com/storage/uploads/view/261a8be90b12bfc3067c1183895ce898.png" alt="Scheme of how blockchain technology works" />";s:10:"post_title";s:22:"What is Bitcoin Mining";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:22:"what-is-bitcoin-mining";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-24 08:19:56";s:17:"post_modified_gmt";s:19:"2018-04-24 08:19:56";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:63:"https://cryptochannel.frb.io/?post_type=cryptopedia&#038;p=1193";s:10:"menu_order";i:0;s:9:"post_type";s:11:"cryptopedia";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}

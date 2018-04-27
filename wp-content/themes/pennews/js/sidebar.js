@@ -1,15 +1,27 @@
 jQuery(document).ready(function($){
 
 	let postTitleSideContainer = $("<div></div>", {text: $(".entry-title.penci-entry-title").first().text(), class: 'post-title-sidebar'});
-
+	
+	let otherPostTitles = $("div.custom-html-widget:eq(0)").delay(100).slideDown(250);
 	let widgetContents = $("div.textwidget.custom-html-widget").prepend(postTitleSideContainer);
-	// widgetContents.hide();
-
-
-	$("h4.penci-block__title").css('cursor', 'pointer');
-	$("h4.penci-block__title").click(function(){
-		widgetContents.slideToggle();
+	widgetContents.hide();
+	
+	
+	$(".penci-block__title_section").on('scrollSpy:exit', function(){
+		console.log("HIII");
+		otherPostTitles.slideUp();
+		widgetContents.slideDown();
+		
+		$(this).scrollSpy();
 	});
+	
+	$("h4.penci-block__title").css('cursor', 'pointer');
+	$("h4.penci-block__title, h4.penci-block__title_section").click(function(){
+		widgetContents.slideToggle();
+		otherPostTitles.slideToggle();
+	});
+	
+	$("h4.penci-block__title").prepend('<i class="fa fa-arrow-circle-o-down fa-1" aria-hidden="true"></i>');
 
 	$("h2").each(function(){
 

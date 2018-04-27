@@ -110,3 +110,17 @@ git commit -m "merge"
 git pull origin master
 git push origin master
 git status
+git status
+git pull origin master
+git add .
+git commit -m "10:42AM"
+git pull origin master
+git push origin master
+git status
+git add .
+git commit -m "Merge"
+git push origin master
+git add .
+git commit -m "10:45"
+git push origin master
+exit

@@ -1,3 +1,4 @@
+
 .post-title-sidebar{
     color: black;
     padding: 15px 18px;
@@ -8,66 +9,48 @@
 	margin-top: -10px;
 }
 
-#page-content-list{
-	line-height: 30px;
+div.custom-html-widget{
+	display: none;
+}
+#page-content-list a{
+	text-decoration: none;
+}
+
+#page-content-list>li>a>div{
 	color: #253137;
-	margin-bottom: 0;
-	list-style-type: none;
-}
-
-#page-content-list>li{
-	margin-top: 2px;
-	padding-left: 0;
-	line-height: 30px;
+	margin: 2px 0 2px -21px;
+	padding: 5px 0 5px 21px;
 	position: relative;
+	line-height: 30px;
+	font-size: 16px;
 }
 
-#page-content-list>li.active>ul>li{
-	width: 100%;
-	font-weight: 400;
-	list-style-type: disc;
-}
-
-#page-content-list div{
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#page-content-list>li.active>a>div,#page-content-list>li:hover>a>div{ 
+#page-content-list>li:hover>a>div, #page-content-list>li.active>a>div{
 	background-color: #fabf2c;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 #page-content-list>li>ul{
-    /* display:none; */
-}
-
-#page-content-list>li:hover>a{
-	color: black;
+	display: none;
 }
 
 #page-content-list>li.active>ul{
-	background-color: none;
+	display: block;
 }
 
-#page-content-list>li>a{
-	font-size: 16px !important;
+#page-content-list>li>ul>li a{
+	color: #253137;
 }
 
-#page-content-list>li>ul{
-	margin-bottom: 0;
+.sublist{
+	list-style-type: disc;
+	list-style-position: inside;
 }
-
-#page-content-list a{
+.sublist a{
 	transition: none;
+	font-size: 14px;
 }
 
-.sublist-item{
-	background-color: white !important;
-	cursor: pointer;
-}
-
-.sublist-item:hover a, .sublist-item>div.active>a{
-	color: #fabf2c;
+.sublist-item>div.active>a, .sublist-item>div:hover>a{
+	color: #ffcd09 !important;
 }

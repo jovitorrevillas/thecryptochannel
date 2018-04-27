@@ -17,8 +17,37 @@ $single_loadmore = penci_get_setting( 'penci_auto_load_prev_post' );
 		background-color: #253137;
 		padding: 11px 18px;
 	}
+	h4.penci-block__title_section{
+		cursor: pointer;
+		color: #fff!important;
+		font-size: 25px;
+		line-height: 34px;
+		display: block;
+		height: 56px;
+		background-color: #253137;
+		padding: 11px 18px;
+	}
 	.widget-area li{
 		list-style-type: none;
+	}
+	.post-title-sidebar-not{
+		color: black;
+		padding: 15px 18px 15px 20px;
+		font-weight: 700;
+		font-size: 16px;
+		margin-top: -10px;
+	}
+	.post-title-sidebar-not:hover{
+		color: black;
+		padding: 15px 18px;
+		border-left: 2px solid #ffcd09;
+		font-weight: 700;
+		font-size: 16px;
+		background-color: #eceff1;
+		margin-top: -10px;
+	}
+	aside a:hover{
+		text-decoration: none;
 	}
 	@media all and (max-width: 960px){
 		.widget-area{
@@ -107,6 +136,43 @@ $single_loadmore = penci_get_setting( 'penci_auto_load_prev_post' );
 				<?php //get_template_part( 'template-parts/animation-loadpost' ); ?>
 			</div>
 			<aside class="widget-area widget-area-2 penci-sticky-sidebar penci-sidebar-widgets">
+				<h4 class="penci-block__title_section" style="cursor: pointer;">Section Contents</h4>
+				<div class="custom-html-widget">
+					<?php
+					$current_id = $post->ID;
+					$terms = get_the_terms( $post->ID, 'cryptopedia_tax' );
+					$term = array_shift( $terms );
+					$paramet = array(
+					'post_type'   => 'cryptopedia',
+					'tax_query'   => array(
+						array(
+							'taxonomy' => 'cryptopedia_tax',
+							'field'    => 'slug',
+							'terms'    => $term->slug
+						)
+					),
+					'orderby' => 'date',
+					'order' => 'ASC',
+					'posts_per_page' => -1
+						
+				);
+				$custom_titles = new WP_Query($paramet);
+				if( $custom_titles->have_posts() ) :
+
+				while( $custom_titles->have_posts() ) :
+					$custom_titles->the_post();
+				?>
+					<?php if($current_id == $post->ID):?>
+					<a href="<?php echo get_permalink(); ?>"><div class="post-title-sidebar"><?php echo get_the_title(); ?></div></a>
+					<?php else: ?>
+					<a href="<?php echo get_permalink(); ?>"><div class="post-title-sidebar-not"><?php echo get_the_title(); ?></div></a>
+					<?php endif;?>
+				<?php 
+				endwhile;
+				endif;
+				
+				?>
+				</div>
 				<?php dynamic_sidebar( 'crypto_widget' ); ?>
 			</aside>
 		</div>
