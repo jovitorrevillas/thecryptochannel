@@ -1,4 +1,4 @@
-’ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2067";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:08:00";s:13:"post_date_gmt";s:19:"2018-04-26 08:08:00";s:12:"post_content";s:8474:"<div class="post-full-text contents js-post-full-text">
+ÎùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2067";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:08:00";s:13:"post_date_gmt";s:19:"2018-04-26 08:08:00";s:12:"post_content";s:8474:"<div class="post-full-text contents js-post-full-text">
 
 CEDEX promises to bridge the gap between the traditional diamond industry and innovative financial markets. For the first time, general investors could have the opportunity to confidently invest in diamonds as they would in other traditional assets.
 

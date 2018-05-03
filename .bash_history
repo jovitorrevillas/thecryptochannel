@@ -124,3 +124,40 @@ git add .
 git commit -m "10:45"
 git push origin master
 exit
+git status
+git add .
+git commit -m "4/27 11:47"
+git pull origin master
+git push origin master
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+ls l
+ls -l
+cd /etc/nginx/sites-available/default
+cd /etc/nginx/sites-available
+cd etc
+ls -l
+cd nginx
+cd /
+cd var/www/html
+cd var
+ls -l
+exit
+vim .htaccess
+sudo service
+service
+service apache restart
+service apache2 restart
+service restart
+service help
+service --help
+restart
+restart --help
+restart --system
+reboot
+--help
+help
+exit

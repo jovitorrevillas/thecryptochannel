@@ -1,4 +1,4 @@
-“ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:22;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-04-17 09:45:46";s:13:"post_date_gmt";s:19:"2018-04-17 09:45:46";s:12:"post_content";s:10035:"/* .penci-container:nth-child(1){
+ƒùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:22;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-04-17 09:45:46";s:13:"post_date_gmt";s:19:"2018-04-17 09:45:46";s:12:"post_content";s:10035:"/* .penci-container:nth-child(1){
 	background-color: white;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
 	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);

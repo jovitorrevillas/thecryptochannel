@@ -1,4 +1,4 @@
-ҝ�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:1382;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-24 11:28:00";s:13:"post_date_gmt";s:19:"2018-04-24 11:28:00";s:12:"post_content";s:18841:"<p dir="ltr"><a href="https://cointelegraph.com/bitcoin-for-beginners/what-is-bitcoin" target="_blank" rel="noopener">Bitcoin</a> first appeared almost exactly nine years ago and it’s now as strong as ever. These days, it’s not only the world’s first but also the most expensive, stable and popular cryptocurrency.</p>
+ĝ�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:1382;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-24 11:28:00";s:13:"post_date_gmt";s:19:"2018-04-24 11:28:00";s:12:"post_content";s:18694:"<p dir="ltr"><a href="https://cointelegraph.com/bitcoin-for-beginners/what-is-bitcoin" target="_blank" rel="noopener">Bitcoin</a> first appeared almost exactly nine years ago and it’s now as strong as ever. These days, it’s not only the world’s first but also the most expensive, stable and popular cryptocurrency.</p>
 That being said, it isn’t perfect. One of the most pressing issues for the cryptocurrency has always been its scalability. More specifically, it’s been the size of a block of transactions, which upon the creation of Bitcoin was limited to one MB. This limit causes substantial delays in transaction processing times and limits the number of transactions the network can process.
 
 Bitcoin Cash was a different story. It differs from the other versions in that in enabled the increase of the block size from one MB to eight MB. It’s overall goal is to increase the number of transactions that can be processed by the network, hoping that Bitcoin Cash will be able to compete with the volume of transactions that industry giants like PayPal and Visa can currently process.
@@ -6,7 +6,7 @@ Bitcoin Cash was a different story. It differs from the other versions in that i
 <img title="Transactions per second. Visa, Bitcoin, Bitcoin Cash" src="https://lh3.googleusercontent.com/obRbtd3AiDW4hZ8bz8O0Re0i0i5MlMdvkzjJ2s0NYNr9IyhLG-xIoQBnldOayMCOVv-K1h9lttbxZyyP9JbdJiVyxtZzTmmyaEQM0oxW40S4wLwTfWaojd6dwauYP_dVJWU5Rl6N" alt="Transactions per second. Visa, Bitcoin, Bitcoin Cash" />
 <p dir="ltr">Bitcoin Cash was launched in August 2017 and has since become Bitcoin’s most successful offshoot.</p>
 
-<div class="embed-responsive embed-responsive-16by9">
+
 <h2 dir="ltr">Story of the hard fork<a id="story-of-the-hard-fork" name="story-of-the-hard-fork"></a></h2>
 The one MB limit for the size of every block was originally implemented to lower the possibility of potential spam and DDoS-attacks. While there were not that many transactions happening in the network, the limit wasn’t affecting anything at all.
 
@@ -56,7 +56,7 @@ Generally, every investment and trading move involves risk, you should conduct y
 <h2 dir="ltr">Where can I buy Bitcoin Cash?<a id="where-can-i-buy-bitcoin-cash" name="where-can-i-buy-bitcoin-cash"></a></h2>
 As Bitcoin Cash is a relatively new cryptocurrency, not every major exchange supports it as of yet. Below is a table of exchanges that operate worldwide where you can trade BCH for a fiat currency or another cryptocurrency. A complete list of every exchange supporting Bitcoin Cash can be found <a href="https://www.bitcoincash.org/#exchanges" target="_blank" rel="nofollow noopener">here</a>.
 <div dir="ltr">
-<div class="ct-table-responsive">
+
 <table border="1" cellspacing="1" cellpadding="1"><colgroup><col /><col /><col /></colgroup>
 <tbody>
 <tr>
@@ -127,7 +127,7 @@ As Bitcoin Cash is a relatively new cryptocurrency, not every major exchange sup
 </tr>
 </tbody>
 </table>
-</div>
+
 </div>
 <p dir="ltr">Bitcoin Cash is also supported by <a href="https://changelly.com/" target="_blank" rel="nofollow noopener">Changelly</a> and <a href="https://shapeshift.io/#/coins" target="_blank" rel="nofollow noopener">ShapeShift</a>,  which are services that enable users to trade between various cryptocurrencies quickly.</p>
 <p dir="ltr"><a href="https://www.localbitcoincash.org/" target="_blank" rel="nofollow noopener">LocalBitcoinCash</a> is a peer-to-peer exchange which allows users to buy and sell BTH directly, both via their escrow service or via a meetup.</p>
@@ -136,7 +136,7 @@ As Bitcoin Cash is a relatively new cryptocurrency, not every major exchange sup
 <h2>Where can I store Bitcoin Cash?<a id="where-can-i-store-bitcoin-cash" name="where-can-i-store-bitcoin-cash"></a></h2>
 &nbsp;
 <div dir="ltr">
-<div class="ct-table-responsive">
+
 <table border="1" cellspacing="1" cellpadding="1"><colgroup><col /><col /><col /><col /></colgroup>
 <tbody>
 <tr>
@@ -309,7 +309,7 @@ As Bitcoin Cash is a relatively new cryptocurrency, not every major exchange sup
 </tr>
 </tbody>
 </table>
-</div>
+
 </div>
 <p dir="ltr">A complete list of Bitcoin Cash compatible wallets can be found <a href="https://www.bitcoincash.org/#wallets" target="_blank" rel="nofollow noopener">here</a>.</p>
 
@@ -326,6 +326,4 @@ Thus, currently, the main use of Bitcoin Cash is investment.
  	<li><a href="http://bitcoin.com/" target="_blank" rel="nofollow noopener">Bitcoin.com</a> — A Bitcoin Cash related sub-forum.</li>
  	<li><a href="https://bccforum.org/index.php?board=1.0" target="_blank" rel="nofollow noopener">Bitcoin Cash Forum</a> — A forum dedicated to Bitcoin Cash. Not very active.</li>
  	<li><a href="https://deeponion.org/community/threads/bitcoin-vs-bitcoin-cash.8511/" target="_blank" rel="nofollow noopener">DeepOnion</a> — Bitcoin vs. Bitcoin Cash thread.</li>
-</ul>
-</div>
-</div>";s:10:"post_title";s:21:"What is Bitcoin Cash?";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:20:"what-is-bitcoin-cash";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-24 11:28:00";s:17:"post_modified_gmt";s:19:"2018-04-24 11:28:00";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:63:"https://cryptochannel.frb.io/?post_type=cryptopedia&#038;p=1382";s:10:"menu_order";i:0;s:9:"post_type";s:11:"cryptopedia";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}
+</ul>";s:10:"post_title";s:21:"What is Bitcoin Cash?";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:20:"what-is-bitcoin-cash";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-30 08:22:45";s:17:"post_modified_gmt";s:19:"2018-04-30 08:22:45";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:63:"https://cryptochannel.frb.io/?post_type=cryptopedia&#038;p=1382";s:10:"menu_order";i:0;s:9:"post_type";s:11:"cryptopedia";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}

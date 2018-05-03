@@ -1,4 +1,4 @@
-“ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:86;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-04-18 08:25:25";s:13:"post_date_gmt";s:19:"2018-04-18 08:25:25";s:12:"post_content";s:1615:"[email* your-email class:footer-mail placeholder "e-mail"]
+ƒùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:86;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-04-18 08:25:25";s:13:"post_date_gmt";s:19:"2018-04-18 08:25:25";s:12:"post_content";s:1615:"[email* your-email class:footer-mail placeholder "e-mail"]
 [submit class:footer-submit "Send"]
 1
 TheCryptoCurrency "[your-subject]"

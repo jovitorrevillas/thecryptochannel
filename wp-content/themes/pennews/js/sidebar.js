@@ -7,21 +7,61 @@ jQuery(document).ready(function($){
 	widgetContents.hide();
 	
 	
-	$(".penci-block__title_section").on('scrollSpy:exit', function(){
-		console.log("HIII");
-		otherPostTitles.slideUp();
-		widgetContents.slideDown();
-		
-		$(this).scrollSpy();
+	
+	
+	let isCalled = false;
+	let sectionGuide  = $("h4.penci-block__title_section");
+	let pageContent = $("h4.penci-block__title");
+	//PHILIP--------------------------------------------------------------------------
+		sectionGuide.prepend('<i id="section" class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>');
+		pageContent.prepend('<i id="page-i" class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>');
+		let icon = $('#section');
+		let page = $('#page-i');
+		icon.css({'color' : 'rgb(250, 191, 44)','margin-right' : '10px'});
+		page.css({'color' : 'rgb(250, 250, 250)','margin-right' : '10px'});
+	
+
+	//END FUNC PHILIP--------------------------------------------------------------------------
+	sectionGuide.on('scrollSpy:exit', function(){
+		if(!isCalled){
+			otherPostTitles.slideUp(function(){
+				icon.toggleClass('fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down');
+				icon.css('color','rgb(250, 250, 250)'); //white
+				
+				page.toggleClass('fa fa-arrow-circle-o-down fa fa-arrow-circle-o-right');
+				page.css('color','rgb(250, 191, 44)'); //yellow
+			});
+			
+			widgetContents.slideDown();
+			isCalled = true;
+		}
 	});
+
+	
+	sectionGuide.scrollSpy();
 	
 	$("h4.penci-block__title").css('cursor', 'pointer');
 	$("h4.penci-block__title, h4.penci-block__title_section").click(function(){
+		otherPostTitles.slideToggle(function(){
+			icon.toggleClass('fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down');
+			page.toggleClass('fa fa-arrow-circle-o-down fa fa-arrow-circle-o-right');
+			
+			if(icon.css('color') == 'rgb(250, 191, 44)'){
+				icon.css('color','rgb(250, 250, 250)');
+			}else{
+				icon.css('color','rgb(250, 191, 44)');
+			}
+			
+			console.log(page.css('color'));
+			if(page.css('color') == 'rgb(250, 250, 250)'){
+				page.css('color','rgb(250, 191, 44)');
+			}else{
+				page.css('color','rgb(250, 250, 250)');
+			}
+		});
 		widgetContents.slideToggle();
-		otherPostTitles.slideToggle();
 	});
 	
-	$("h4.penci-block__title").prepend('<i class="fa fa-arrow-circle-o-down fa-1" aria-hidden="true"></i>');
 
 	$("h2").each(function(){
 
