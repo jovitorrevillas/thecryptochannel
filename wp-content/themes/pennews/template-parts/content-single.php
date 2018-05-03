@@ -1,4 +1,6 @@
 <?php
+global $post;
+
 $single_style = penci_get_setting( 'penci_single_template' );
 
 
@@ -11,4 +13,11 @@ if( $use_option_current ) {
 }
 
 $single_style = $single_style ? $single_style : 'style-1';
+if ($post->post_type == 'cryptopedia') {
+	if(preg_match("/explained/i", $_SERVER['REQUEST_URI']))
+		$single_style = 'single-explained';
+	else
+		$single_style = 'single-bitcoin101';
+}
+
 get_template_part( 'template-parts/single/' . $single_style );

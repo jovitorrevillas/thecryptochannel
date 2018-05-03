@@ -1,0 +1,18 @@
+ҝ�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"1526";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-03-16 01:32:29";s:13:"post_date_gmt";s:19:"2018-03-16 01:32:29";s:12:"post_content";s:2665:"<div class="post-full-text contents js-post-full-text">
+<p dir="ltr">Renwick Haddow, a British citizen and alleged <a href="https://cointelegraph.com/tags/bitcoin">Bitcoin</a> fraudster has been extradited from Morocco to the U.S. and appeared in a Manhattan District Court on Friday, the U.S. Department of Justice (DoJ) <a href="https://www.justice.gov/usao-sdny/pr/british-citizen-extradited-morocco-defrauding-investors-more-36-million" target="_blank" rel="nofollow,noopener">announced</a> April 13.</p>
+The DoJ complaint alleges Haddow, 49, “misappropriated investor funds” and "made false and misleading representations” to investors in Bitcoin Store, Bar Works, and related schemes, from Nov. 2014 through June 2017. He has been charged with two counts of wire fraud - for Bitcoin Store and Bar Works respectively - with each carrying a maximum sentence of 20 years in prison.
+
+Haddow was taken into police custody in Tangiers last July after Interpol issued a <a href="https://cointelegraph.com/news/bitcoin-store-operator-lost-investors-40-mln-reports">warrant for his arrest</a>. The warrant followed the SEC’s applications for final default judgements against three of Haddow’s schemes, ordering him to pay penalties in excess of $83 mln for securities fraud.
+
+Bitcoin Store was purportedly a crypto exchange, although the SEC <a href="https://www.sec.gov/litigation/complaints/2017/comp-pr2017-123.pdf" target="_blank" rel="nofollow,noopener">alleged</a> investor funds were diverted and the exchange never became “profitable”. Bar Works, meanwhile, illicitly leased co-working space services to investors around the world. The SEC alleged Haddow defrauded investors out of over $37 mln in total. In both schemes, Haddow is said to have concealed his involvement under false identities.
+
+Earlier this month, the SEC <a href="https://cointelegraph.com/news/sec-busts-fraudulent-ico-endorsed-by-floyd-mayweather-founders-defrauded-32-mln">charged</a> a fraudulent celebrity-endorsed ICO with illicitly raising $32 mln in unregistered investments. In mid-March, the SEC’ Enforcement Division co-director confirmed the agency is currently conducting <a href="https://cointelegraph.com/news/us-sec-official-confirms-dozens-of-cryptocurrency-probes">“dozens” of cryptocurrency-related investigations</a>across the U.S.
+<div id="quiz"></div>
+</div>
+<div class="b-post-subscription">
+<div class="b-post-subscription__wrap">
+<div class="b-post-subscription__col b-post-subscription__col_socials">
+<div class="b-post-socials b-post-subscription__block b-post-subscription__block_socials"></div>
+</div>
+</div>
+</div>";s:10:"post_title";s:70:"Alleged Bitcoin Fraudster Renwick Haddow Extradited From Morocco To US";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:70:"alleged-bitcoin-fraudster-renwick-haddow-extradited-from-morocco-to-us";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-25 04:34:21";s:17:"post_modified_gmt";s:19:"2018-04-25 04:34:21";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:36:"https://cryptochannel.frb.io/?p=1526";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

@@ -1,0 +1,50 @@
+/*PJ styles*/
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-tab.vc_active>a{
+   border-bottom: 3px solid #ffcd04;
+}
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat a{
+   font-size: 18px;
+   background-color: white;
+}
+.wpb_text_column h1, .wpb_text_column h2, .wpb_text_column h3, .wpb_text_column h4, .wpb_text_column h5, .wpb_text_column h6, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .comment-content h1, .comment-content h2, .comment-content h3, .comment-content h4, .comment-content h5, .comment-content h6{
+    margin-bottom:0;
+}
+.vc_custom_1524650269254{
+    padding-top:0;
+}
+.separator{
+    width: 50px;
+    height: 4px;
+}
+.wpb_text_column{
+    background: transparent;
+}
+body{
+    background: white;
+}
+.penci_media_object .penci_mobj__img{
+    width: 25.5%;
+}
+.penci-block_12 .penci_media_object {
+    margin-bottom: 20px;
+}
+button, .button, .entry-content a.button{
+    color: #a1a1a1;
+    border: 0 solid #000;
+    background: transparent;
+}
+.entry-content a{
+    color: #010101;
+}
+.penci-archive .penci-archive__content .entry-meta a, .penci-archive .penci-archive__content .entry-meta span:not(.penci-chart-text), .penci-archive .penci-archive__content .entry-meta i, .penci-owl-featured-area.style-15 .penci_post-meta a, .penci-owl-featured-area.style-15 .penci_post-meta span:not(.penci-chart-text), .penci-owl-featured-area.style-15 .penci_post-meta i, .penci-inline-related-posts .penci_post-meta a, .penci-inline-related-posts .penci_post-meta span:not(.penci-chart-text), .penci-inline-related-posts .penci_post-meta i, .penci__general-meta .penci_post-meta a, .penci__general-meta .penci_post-meta span:not(.penci-chart-text), .penci__general-meta .penci_post-meta i, .penci-block_video.style-1 .penci_post-meta a, .penci-block_video.style-1 .penci_post-meta span:not(.penci-chart-text), .penci-block_video.style-1 .penci_post-meta i, .penci-block_video.style-7 .penci_post-meta a, .penci-block_video.style-7 .penci_post-meta span:not(.penci-chart-text), .penci-block_video.style-7 .penci_post-meta i, .penci-grid_4 .penci_post-meta a, .penci-grid_4 .penci_post-meta span:not(.penci-chart-text), .penci-grid_4 .penci_post-meta i, .penci-block_30 .penci_post-meta a, .penci-block_30 .penci_post-meta span:not(.penci-chart-text), .penci-block_30 .penci_post-meta i, .penci-block_33 .penci_post-meta a, .penci-block_33 .penci_post-meta span:not(.penci-chart-text), .penci-block_33 .penci_post-meta i, .penci__general-meta .penci_post-meta a, .penci__general-meta .penci_post-meta span:not(.penci-chart-text), .penci__general-meta .penci_post-meta i, .penci-entry-meta a, .penci-entry-meta span:not(.penci-chart-text), .penci-entry-meta i{
+    color: #27282d;
+}
+ul li{
+    list-style-type: circle;
+}
+
+@media all and (max-width: 480px){
+    .penci_media_object .penci_mobj__img{
+        width: 92.5%;
+    }
+}

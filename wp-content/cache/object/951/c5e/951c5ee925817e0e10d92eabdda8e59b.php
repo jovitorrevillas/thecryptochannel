@@ -1,0 +1,32 @@
+ҝ�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"1132";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-02-14 06:53:17";s:13:"post_date_gmt";s:19:"2018-02-14 06:53:17";s:12:"post_content";s:5508:"<div class="post-full-text contents js-post-full-text">
+<p dir="ltr">2017 proved to be a <a href="https://cointelegraph.com/news/the-cream-of-the-crypto-crop-10-best-performing-assets-in-2017" target="_blank" rel="noopener">breakout year for cryptocurrencies</a> as a whole as investors saw massive returns on gains made, especially in Bitcoin and Ethereum.</p>
+A 1,000 percent appreciation in value from January to December made Bitcoin the major player in the market, but investors who entered the market last year have nothing on early Bitcoin adopters in the years following its creation in 2009.
+
+Those who got their hands on Bitcoin before 2014, where <a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank" rel="nofollow,noopener">its price fluctuated</a> between $100 all the way up to a $1,000 high, are the real winners. Considering the preeminent cryptocurrency was available for less than $100 for at least four years, early investors will have got their hands on hundreds and thousands of Bitcoin before its meteoric rise in value.
+
+The list of supposed <a href="https://cointelegraph.com/news/winklevoss-twins-become-first-official-bitcoin-billionaires" target="_blank" rel="noopener">Bitcoin billionaires</a> puts a spotlight on the biggest holders of the virtual currency, but there are likely to be <a href="https://cointelegraph.com/news/bitcoin-billionaires-hiding-in-plain-sight" target="_blank" rel="noopener">thousands of people holding onto a small fortune in Bitcoin</a>.
+
+<a class="fancybox" title="Bitcoin Charts" href="https://cointelegraph.com/storage/uploads/view/5024a5130bf95861b1aca98eb22a86db.jpeg" rel="gallery"><img title="Bitcoin Charts" src="https://cointelegraph.com/storage/uploads/view/5024a5130bf95861b1aca98eb22a86db.jpeg" alt="Bitcoin Charts" /></a>
+<p dir="ltr">Many early adopters like to promote the ‘hodl’ lifestyle, refusing to sell any of their Bitcoin at any cost. It's hard to argue against them having seen the rise of Bitcoin over the past 12 months.</p>
+
+<h2>Don’t hodl everything</h2>
+However, early Bitcoin investor and well-known venture capitalist Fred Wilson insists that investors with a large amount of Bitcoin would be wise to practice profit taking, as reported by <a href="https://www.cnbc.com/2018/01/08/early-bitcoin-bull-fred-wilson-says-you-should-take-some-profits.html" target="_blank" rel="nofollow,noopener">CNBC this week</a>.
+<blockquote>“If you are sitting on 20x, 50x, 100x your money on a crypto investment, it would not be a mistake to sell 10 percent, 20 percent or even 30 percent of your position. Selling 25 percent of your position on an investment that is up 50x is booking a 12.5x on the entire investment while allowing you to keep 75 percent of it going. I know that many crypto holders think that selling anything is a mistake. And it might be. Or it might not be. You just don’t know.”</blockquote>
+Wilson posted the advice on his <a href="http://avc.com/" target="_blank" rel="nofollow,noopener">personal blog</a>, in a post grappling with the difficulties of managing a venture capitalist portfolio. The 56-year-old is the founder of Union Square Ventures, which has stakes in a number of technology companies including the likes of Twitter.
+<h2>Wild ride</h2>
+Wilson’s sentiments come at an interesting juncture. The past three weeks have been tumultuous for the cryptocurrency market. <a href="https://cointelegraph.com/news/cryptocurrency-market-takes-a-tumble-as-ripple-bubble-fear-looms" target="_blank" rel="noopener">Marred by volatility</a>, the markets have seen wild price fluctuations with many virtual currencies affected.
+
+Bitcoin and Ethereum prices are <a href="https://cointelegraph.com/news/bitcoin-ethereum-bitcoin-cash-ripple-iota-litecoin-nem-cardano-price-analysis-jan-8" target="_blank" rel="noopener">caught in a massive bull vs. bear market</a>, as investors look to book profits and stop losses as often as possible.
+
+Nevertheless, Wilson offers some sage advice ahead of an exciting 2018, as more mainstream <a href="https://cointelegraph.com/news/new-york-stock-exchange-moves-on-bitcoin-etfs" target="_blank" rel="noopener">financial institutions</a> iron out plans to enter the market in different ways. The CBE and CMOE have blazed the trail for Bitcoin Futures, and the likes of the <a href="https://cointelegraph.com/news/new-york-stock-exchange-moves-on-bitcoin-etfs" target="_blank" rel="noopener">New York Stock Exchange</a>, <a href="https://cointelegraph.com/news/wall-street-journal-nasdaq-to-offer-bitcoin-futures-in-june-2018" target="_blank" rel="noopener">NASDAQ</a> and <a href="https://cointelegraph.com/news/bloomberg-goldman-sachs-to-setup-cryptocurrency-trading-desk" target="_blank" rel="noopener">Goldman Sachs</a> are all preparing to launch their own offerings in the next few months.
+
+Coupled with the massive <a href="https://cointelegraph.com/news/exponential-growth-cryptocurrency-exchanges-are-adding-100000-users-per-day" target="_blank" rel="noopener">influx of users</a> looking to open cryptocurrency accounts, the outlook seems bright, even amidst constantly changing market values.
+<div id="quiz"></div>
+</div>
+<div class="b-post-subscription">
+<div class="b-post-subscription__wrap">
+<div class="b-post-subscription__col b-post-subscription__col_socials">
+<div class="b-post-socials b-post-subscription__block b-post-subscription__block_socials"></div>
+</div>
+</div>
+</div>";s:10:"post_title";s:50:"'Hodl' Everything or Take Profits on Crypto Gains?";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:47:"hodl-everything-or-take-profits-on-crypto-gains";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-25 04:10:55";s:17:"post_modified_gmt";s:19:"2018-04-25 04:10:55";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:36:"https://cryptochannel.frb.io/?p=1132";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

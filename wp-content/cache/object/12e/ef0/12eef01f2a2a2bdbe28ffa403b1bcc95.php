@@ -1,0 +1,21 @@
+ҝ�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"1481";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-03-11 02:57:37";s:13:"post_date_gmt";s:19:"2018-03-11 02:57:37";s:12:"post_content";s:3320:"<p dir="ltr">US whistleblower <a href="https://cointelegraph.com/tags/edward-snowden" target="_blank" rel="noopener">Edward Snowden</a> voiced concerns over <a href="https://cointelegraph.com/tags/bitcoin" target="_blank" rel="noopener">Bitcoin’s</a> long-term prospects in an interview on March 22, saying the cryptocurrency’s public Blockchain made it susceptible to abuse.</p>
+Speaking via webcam in an interview with Coin Center director of research Peter Van Valkenburgh at the Blockstack Berlin 2018 conference, Snowden agreed Bitcoin’s ledger was “devastatingly public.”
+
+“The much larger structural flaw, the long-lasting flaw, is its public ledger,” he said of Bitcoin, adding that he nonetheless “may” have used it to buy server infrastructure in 2013.
+
+Bitcoin’s future remains a hot topic of debate this year as technical improvements to its network increasingly allow it to be used as an instant, near-free currency once again.
+
+This week, Twitter CEO Jack Dorsey <a href="https://cointelegraph.com/news/twitter-ceo-says-bitcoin-will-become-worlds-single-currency-within-a-decad" target="_blank" rel="noopener">told</a> mainstream media that he foresees a “single currency” for the internet coming within ten years. “I personally believe that it will be Bitcoin,” he added.
+
+For Snowden, however, a true alternative to fiat currencies that balances mass appeal with lack of government control has yet to surface:
+<blockquote>“It’s a question of how do we design competing systems that are simply so attractive that they will not be ignored by the global consumer base but also the governments themselves who are seeking to compete against them will not simply be able to outlaw them and have that be meaningful.”</blockquote>
+Not just Bitcoin came in for questioning, but altcoins as well; Snowden confirmed he had used <a href="https://cointelegraph.com/tags/monero" target="_blank" rel="noopener">Monero</a>, while reiterating his support for <a href="https://cointelegraph.com/tags/zcash" target="_blank" rel="noopener">ZCash</a> as the “most interesting” altcoin currently on the market due to its “unique” privacy setup.
+<div class="post-full-text contents js-post-full-text">
+
+Van Valkenburgh himself was fresh from a <a href="https://cointelegraph.com/news/at-dc-hearing-coinbase-calls-out-federal-regulators-for-harming-innovation" target="_blank" rel="noopener">US Congressional hearing</a> on the future of cryptocurrency regulation that took place last week on March 14.
+
+As one of the four key witnesses at the hearing, defence of Bitcoin’s core values was a conspicuous priority in the face of opposition from some political sources.
+
+“The fundamental innovation of Bitcoin is digital scarcity,” he told lawmakers in his <a href="https://coincenter.org/link/coin-center-s-peter-van-valkenburgh-to-testify-in-upcoming-congressional-hearing-on-cryptocurrencies-and-icos" target="_blank" rel="nofollow,noopener">testimony</a>.
+<blockquote>“That digital scarcity can then be employed by innovative people for a variety of innovative purposes. A token that is scarce and transferable from person to person can be used just like money, just as any good throughout history from gold to seashells.”</blockquote>
+</div>";s:10:"post_title";s:78:"Edward Snowden On Bitcoin: World Needs Better Option To Avoid Gov’t Coercion";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:74:"edward-snowden-on-bitcoin-world-needs-better-option-to-avoid-govt-coercion";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-04-25 04:30:44";s:17:"post_modified_gmt";s:19:"2018-04-25 04:30:44";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:36:"https://cryptochannel.frb.io/?p=1481";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

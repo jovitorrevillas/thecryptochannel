@@ -28,7 +28,7 @@ class Penci_Customizer
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-
+		
 		require_once get_template_directory() . '/inc/customizer/custom-control/custom-control.php';
 		require_once get_template_directory() . '/inc/customizer/custom-control/radio-image.php';
 		require_once get_template_directory() . '/inc/customizer/custom-control/radio-html.php';
@@ -85,6 +85,10 @@ class Penci_Customizer
 		require_once get_template_directory() . '/inc/customizer/30-color-footer.php';
 
 		require_once get_template_directory() . '/inc/customizer/32-footer-signup.php';
+
+		
+		// custom
+		require_once get_template_directory() . '-child/custom_footer.php';
 	}
 
 	/**

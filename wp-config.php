@@ -1,4 +1,7 @@
 <?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /**
  * The base configuration for WordPress
  *
@@ -20,13 +23,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'tcc');
+define('DB_NAME', 'cryptochannel');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'mysqldev');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'mysqldev1');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
