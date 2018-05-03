@@ -1,4 +1,4 @@
-’ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2074";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:09:57";s:13:"post_date_gmt";s:19:"2018-04-26 08:09:57";s:12:"post_content";s:2738:"<div class="post-full-text contents js-post-full-text">
+ÎùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2074";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:09:57";s:13:"post_date_gmt";s:19:"2018-04-26 08:09:57";s:12:"post_content";s:2738:"<div class="post-full-text contents js-post-full-text">
 
 <em>Senior VP for Business Development to leave solutions provider to establish new blockchain and gambling venture.</em>
 <div><strong>London, UK ‚Äì 19 March 2018.</strong>¬†Tom Light, Senior Vice-President of Business Development at SBTech, is to leave the group to establish a new business venture that will unite blockchain and gambling and leverage the power of the crypto-currency in a gaming and betting environment.</div>

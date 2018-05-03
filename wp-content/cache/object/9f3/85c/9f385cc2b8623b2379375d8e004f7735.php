@@ -1,4 +1,4 @@
-“ù‚Z<?php exit; ?>a:1:{s:7:"content";a:7:{s:17:"_vc_post_settings";a:1:{i:0;s:30:"a:1:{s:10:"vc_grid_id";a:0:{}}";}s:5:"_form";a:1:{i:0;s:94:"[email* your-email class:footer-mail placeholder "e-mail"]
+ƒùÍZ<?php exit; ?>a:1:{s:7:"content";a:7:{s:17:"_vc_post_settings";a:1:{i:0;s:30:"a:1:{s:10:"vc_grid_id";a:0:{}}";}s:5:"_form";a:1:{i:0;s:94:"[email* your-email class:footer-mail placeholder "e-mail"]
 [submit class:footer-submit "Send"]";}s:5:"_mail";a:1:{i:0;s:509:"a:9:{s:6:"active";b:1;s:7:"subject";s:34:"TheCryptoCurrency "[your-subject]"";s:6:"sender";s:32:"[your-name] <awdawd16@gmail.com>";s:9:"recipient";s:18:"awdawd16@gmail.com";s:4:"body";s:189:"From: [your-name] <[your-email]>
 Subject: [your-subject]
 

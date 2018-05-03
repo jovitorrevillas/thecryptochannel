@@ -13,3 +13,14 @@
 		<?php get_template_part( 'template-parts/header/cart_search_social' ); ?>
 	</div>
 </header><!-- #masthead -->
+
+<?php if(is_singular('cryptopedia')): ?>
+<style>
+	.embed-responsive{
+		height: inherit !important;
+	}
+	.embed-responsive-16by9{
+		padding-bottom: 0 !important;
+	}
+</style>
+<?php endif; ?>

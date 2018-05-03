@@ -1,4 +1,4 @@
-’ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2056";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:05:14";s:13:"post_date_gmt";s:19:"2018-04-26 08:05:14";s:12:"post_content";s:3225:"<div class="post-full-text contents js-post-full-text">
+ÎùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2056";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:05:14";s:13:"post_date_gmt";s:19:"2018-04-26 08:05:14";s:12:"post_content";s:3225:"<div class="post-full-text contents js-post-full-text">
 <p dir="ltr"><strong>Limassol, Cyprus (March 8, 2018)</strong>¬†‚Äî Circle.One is a blockchain-based marketplace for data, analytics and research. Become a Circle decision maker and reserve your CLC tokens now. ICO starting in Q2/18.</p>
 <p dir="ltr">The scientific and research market is crying for disruption.</p>
 <p dir="ltr">Important research remains unpublished while the quality of mainstream scientific journals is rapidly sinking.</p>

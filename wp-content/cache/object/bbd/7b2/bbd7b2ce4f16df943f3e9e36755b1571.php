@@ -1,4 +1,4 @@
-ÕâZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2071";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:08:50";s:13:"post_date_gmt";s:19:"2018-04-26 08:08:50";s:12:"post_content";s:6844:"<div class="post-full-text contents js-post-full-text">
+ëêZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2071";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:08:50";s:13:"post_date_gmt";s:19:"2018-04-26 08:08:50";s:12:"post_content";s:6844:"<div class="post-full-text contents js-post-full-text">
 
 In a move that strengthensÂ San Diego-basedÂ <a href="https://xyo.network/?gclid=CjwKCAiA_ojVBRAlEiwAOLRxI0VEoblG7SHlE2UPahCWYUyp_mjyQldsQqNsgkVtl6xOV5moelBrWxoCA6oQAvD_BwE" target="_blank" rel="noopener noreferrer" data-include="300615575" data-snippet-id="1f923ba5-a8b5-d6bb-21cb-cd53f41abe0a">XYO Network</a>Â as a leader in the development of crypto-location technology, the company has recently acquired GEO. The company GEO and the team behind it first attracted the attention of XYO Network during EthDenver, one of the largest hackathons for Ethereum inÂ the United States.
 

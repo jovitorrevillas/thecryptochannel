@@ -1,4 +1,4 @@
-’ù‚Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2087";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:11:09";s:13:"post_date_gmt";s:19:"2018-04-26 08:11:09";s:12:"post_content";s:4239:"<div class="post-full-text contents js-post-full-text">
+ÎùÍZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2087";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:11:09";s:13:"post_date_gmt";s:19:"2018-04-26 08:11:09";s:12:"post_content";s:4239:"<div class="post-full-text contents js-post-full-text">
 
 Worldcore, an EU-regulated payment platform, has announced the launch of large update packages after a successful fundraising campaign. The most important update announced is a wallet for Ethereum tokens. Since it is a network of computers, rather than one central point, all applications are better protected against hacking attacks and fraudulent activities.
 

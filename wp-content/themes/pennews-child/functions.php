@@ -251,3 +251,48 @@ function add_sidebar_scripts(){
 
 add_action('wp_enqueue_scripts', 'add_sidebar_scripts');
 
+//Michael Custom Meta Boxes for Explained Page
+
+function explained_custom( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'sharebox_right',
+		'title' => esc_html__( 'Share Box Right', 'metabox-online-generator' ),
+		'post_types' => array('cryptopedia' ),
+		'context' => 'normal',
+		'priority' => 'default',
+		'autosave' => false,
+		'tax_query'   => array(
+						array(
+							'taxonomy' => 'cryptopedia_tax',
+							'field'    => 'slug',
+							'terms'    => 'explained'
+						)
+					),
+		'fields' => array(
+			array(
+				'id' => $prefix . 'sponsor_label',
+				'type' => 'text',
+				'name' => esc_html__( 'Sponsor Text', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'add text here', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'sponsor_link',
+				'type' => 'text',
+				'name' => esc_html__( 'Sponsor Link', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'image_advanced_2',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Image Advanced', 'metabox-online-generator' ),
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'explained_custom' );
+
+
+

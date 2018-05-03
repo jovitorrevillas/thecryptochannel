@@ -1,4 +1,4 @@
-՝�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2061";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:06:09";s:13:"post_date_gmt";s:19:"2018-04-26 08:06:09";s:12:"post_content";s:3478:"<div class="post-full-text contents js-post-full-text">
+��Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"2061";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2018-04-26 08:06:09";s:13:"post_date_gmt";s:19:"2018-04-26 08:06:09";s:12:"post_content";s:3478:"<div class="post-full-text contents js-post-full-text">
 <p dir="ltr"><strong>09-03-2018 London: </strong>UK-based Livetree ADEPT will be making a big announcement in <strong>Blockchain Summit London</strong> around their <em><strong>10 million dollar ICO partnership </strong></em>making it the first global entertainment platform on blockchain to achieve this feat.</p>
 Livetree is one of its kind in the field of blockchain domain working towards democratizing the process of filmmaking and distribution.
 
