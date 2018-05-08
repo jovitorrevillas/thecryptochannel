@@ -249,6 +249,7 @@ function add_sidebar_scripts(){
 	}
 }
 
+
 add_action('wp_enqueue_scripts', 'add_sidebar_scripts');
 
 //Michael Custom Meta Boxes for Explained Page

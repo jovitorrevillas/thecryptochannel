@@ -11,6 +11,8 @@ Domain Path: /languages
 License: GPLv2 or later
 */
 
+if(is_singular('cryptopedia')){
+
 function essl_text_domain() {
 	load_plugin_textdomain('easy-smooth-scroll-links', false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
@@ -233,3 +235,4 @@ define('ESSLPluginOptions_NICK', 'ESSL');
 		}					
 	}	
 endif;
+}
